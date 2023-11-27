@@ -6,6 +6,7 @@ import 'package:dumbs/core/widgets/alerts.dart';
 import 'package:dumbs/core/widgets/coustom_sized_box.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
@@ -31,6 +32,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
   bool showResult = false;
   Set<String> values = <String>{};
   String? savedData;
+  MaterialTextSelectionControls controls = MaterialTextSelectionControls();
 
   @override
   Widget build(BuildContext context) {
@@ -43,9 +45,16 @@ class _QuestionWidgetState extends State<QuestionWidget> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CustomText.h5(
-                    text: 'Question #${widget.question.id}',
-                    color: Colors.indigo,
+                  // CustomText.h5(
+                  //   text: 'Question #${widget.question.id}',
+                  //   color: Colors.indigo,
+                  // ),
+                  SelectableText(
+                    'Question #${widget.question.id}',
+                    style: const TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Container(
                     width: constraints.maxWidth > 600 ? context.width * 0.6 : context.width,
@@ -57,22 +66,47 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                         width: 2.0,
                       ),
                     ),
-                    child: HtmlWidget(widget.question.question, customWidgetBuilder: (element) {
-                      if (element.localName == 'img') {
-                        return Image.asset(
-                          element.attributes['src']!,
-                          width: context.width,
-                          fit: BoxFit.cover,
+                    child: SelectionArea(
+                      selectionControls: controls,
+                      magnifierConfiguration: const TextMagnifierConfiguration(),
+                      contextMenuBuilder: (context, selectionData) {
+                        return PopupMenuButton<String>(
+                          itemBuilder: (context) {
+                            return [
+                              const PopupMenuItem(
+                                value: 'copy',
+                                child: Text('Copy'),
+                              ),
+                              const PopupMenuItem(
+                                value: 'paste',
+                                child: Text('Paste'),
+                              ),
+                            ];
+                          },
+                          onSelected: (value) {
+                            if (value == 'copy') {
+                              Clipboard.setData(ClipboardData(text: widget.question.question));
+                            }
+                          },
                         );
+                      },
+                      child: HtmlWidget(widget.question.question, customWidgetBuilder: (element) {
+                        if (element.localName == 'img') {
+                          return Image.asset(
+                            element.attributes['src']!,
+                            width: context.width,
+                            fit: BoxFit.cover,
+                          );
+                        }
                       }
-                    }
-                        // child: CustomText(
-                        //   text: widget.question.question,
-                        //   fontSize: constraints.maxWidth > 600 ? 5.0.sp : 11.0.sp,
-                        //   fontWeight: FontWeight.bold,
-                        //   textAlign: TextAlign.justify,
-                        // ),
-                        ),
+                          // child: CustomText(
+                          //   text: widget.question.question,
+                          //   fontSize: constraints.maxWidth > 600 ? 5.0.sp : 11.0.sp,
+                          //   fontWeight: FontWeight.bold,
+                          //   textAlign: TextAlign.justify,
+                          // ),
+                          ),
+                    ),
                   ),
                   1.0.height,
                   SizedBox(
@@ -160,9 +194,12 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                         width: 1.0,
                       ),
                     ),
-                    child: CustomText(
-                      text: widget.question.answers.correctAnswer.reduce((value, element) => '$value, $element'),
+                    child: HtmlWidget(
+                      widget.question.answers.correctAnswer.reduce((value, element) => '$value, $element'),
                     ),
+                    // child: CustomText(
+                    //   text: widget.question.answers.correctAnswer.reduce((value, element) => '$value, $element'),
+                    // ),
                   )
                 : const SizedBox(),
             15.0.height,

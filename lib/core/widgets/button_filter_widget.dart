@@ -1,5 +1,8 @@
+import 'dart:developer';
 
+import 'package:dumbs/core/extensions/media_query_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'custom_text.dart';
 
 class ButtonFilterWidget extends StatelessWidget {
@@ -86,6 +89,7 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
     optionsList = widget.options.toList();
     // _loadSelectedOption();
   }
+
   //
   // // Load selected options from SharedPreferences
   // Future<void> _loadSelectedOption() async {
@@ -147,6 +151,7 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
               selectedOptionsName.add(optionsList[i]);
             }
             widget.setOptions(selectedOptionsName);
+            log('selectedOptionsName: $selectedOptionsName', name: 'button_filter_widget.dart');
             // _saveSelectedOption();
           },
           child: Padding(
@@ -162,9 +167,25 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
                   color: _selectedOption.contains(index) ? Colors.transparent : widget.borderColor,
                 ),
               ),
-              child: CustomText(
-                text: item.toString(),
-                color: _selectedOption.contains(index) ? widget.selectedTextColor : widget.unselectedTextColor,
+              // child: CustomText(
+              //   text: item.toString(),
+              //   color: _selectedOption.contains(index) ? widget.selectedTextColor : widget.unselectedTextColor,
+              // ),
+              child: HtmlWidget(
+                item.toString(),
+                textStyle: TextStyle(
+                  color: _selectedOption.contains(index) ? widget.selectedTextColor : widget.unselectedTextColor,
+                ),
+                customWidgetBuilder: (element) {
+                  if (element.localName == 'img') {
+                    return Image.asset(
+                      element.attributes['src']!,
+                      width: context.width,
+                      fit: BoxFit.cover,
+                    );
+                  }
+                  return null;
+                },
               ),
             ),
           ),
@@ -191,8 +212,6 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
     // );
   }
 }
-
-
 
 // extension IterableExtension<T> on Iterable<T> {
 //   Iterable<E> whereIndexed<E>(bool Function(int index, T element) test) sync* {

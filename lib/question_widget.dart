@@ -99,12 +99,6 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                           );
                         }
                       }
-                          // child: CustomText(
-                          //   text: widget.question.question,
-                          //   fontSize: constraints.maxWidth > 600 ? 5.0.sp : 11.0.sp,
-                          //   fontWeight: FontWeight.bold,
-                          //   textAlign: TextAlign.justify,
-                          // ),
                           ),
                     ),
                   ),
@@ -148,10 +142,9 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                       );
                     } else {
                       if (values.containsAll(widget.question.answers.correctAnswer)) {
-                        context.showSnackBar(
+                        context.toast(
                           text: 'Correct Answer',
-                          status: SnackStatus.success,
-                          textColor: Colors.white,
+                          status: ToastStatus.success,
                         );
                         final getData = di<CacheHelper>().getData(key: 'question_${widget.question.id}');
                         log('getData: $getData', name: 'QuestionWidget');
@@ -160,10 +153,9 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                           showResult = true;
                         });
                       } else {
-                        context.showSnackBar(
+                        context.toast(
                           text: 'Wrong Answer',
-                          status: SnackStatus.error,
-                          textColor: Colors.black,
+                          status: ToastStatus.error,
                         );
                         setState(() {
                           showResult = false;

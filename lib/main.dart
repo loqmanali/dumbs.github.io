@@ -1804,219 +1804,676 @@ List<ProjectPlusQuestion> projectPlusQuestion = [
       correctAnswer: {'C. Advise that a change request would need to be approved.'},
     ),
   ),
+  ProjectPlusQuestion(
+    id: 101,
+    question: 'During a demonstration, the product owner asked the team to add new scope to the backlog. Which of the following should the Scrum master do NEXT?',
+    answers: ProjectPlusAnswers(
+      id: 101,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Create a change request for the change advisory board.',
+        'B. Work with the business analyst to document the new epic.',
+        'C. Reject the change to prevent scope creep.',
+        'D. Update the risk register and the work in the mitigation plan.',
+      ],
+      correctAnswer: {'B. Work with the business analyst to document the new epic.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 102,
+    question: 'Project A and Project B share a team member. The team member is falling behind on a task for Project B. Which of the following is the BEST action to take to get the task for Project B back on track?',
+    answers: ProjectPlusAnswers(
+      id: 102,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Negotiate to get more of the team member\'s available time.',
+        'B. Assign the team member to work overtime to finish the task.',
+        'C. Speed up completion of the task by assisting the team member.',
+        'D. Have the project manager complete the task.',
+      ],
+      correctAnswer: {'C. Speed up completion of the task by assisting the team member.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 103,
+    question: 'A portfolio manager needs to provide the senior management team with a dynamic, high-level, monthly status update on all active projects in the portfolio. Which of the following should the manager use to accomplish this task?',
+    answers: ProjectPlusAnswers(
+      id: 103,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Dashboard.',
+        'B. Status report.',
+        'C. Gantt chart.',
+        'D. Email.',
+      ],
+      correctAnswer: {'A. Dashboard.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 104,
+    question: 'A project manager has been assigned to a project that involves replacing key operational equipment. The project manager is new to the industry and has learned that compliance requirements must be met. Which of the following should the project manager do FIRST?',
+    answers: ProjectPlusAnswers(
+      id: 104,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Trust that the project requirements fully document the necessary compliances.',
+        'B. Meet with the end users to learn more about the compliance requirements.',
+        'C. Research the compliance requirements related to the project to understand the implications.',
+        'D. Make the QA specialist responsible for ensuring that the compliance requirements are met.',
+      ],
+      correctAnswer: {'C. Research the compliance requirements related to the project to understand the implications.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 105,
+    question: 'Two team members have a minor disagreement on how a task should be performed. The project manager plans to meet with the team members to discuss the matter. Which of the following techniques should the project manager use to emphasize the areas of agreement and downplay the opposing views?',
+    answers: ProjectPlusAnswers(
+      id: 105,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Compromising.',
+        'B. Forcing.',
+        'C. Smoothing.',
+        'D. Collaborating.',
+      ],
+      correctAnswer: {'C. Smoothing.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 106,
+    question: 'A project manager is assigned to a large, complex project that is very new to the organization. Because of huge expenditures, the project cannot be cancelled after it starts. Which of the following is most important for the project manager to do FIRST?',
+    answers: ProjectPlusAnswers(
+      id: 106,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Carefully select the vendor.',
+        'B. Identify and evaluate risks.',
+        'C. Establish change management procedures.',
+        'D. Evaluate the resource pool.',
+      ],
+      correctAnswer: {'B. Identify and evaluate risks.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 107,
+    question: 'As a result of an approved change request, the project manager updates the project plan to reflect the new feature addition and the revised production release date. Which of the '
+        'following change control processes should the project manager do NEXT?',
+    answers: ProjectPlusAnswers(
+      id: 107,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Validate the change implementation.',
+        'B. Implement the change.',
+        'C. Conduct an impact assessment.',
+        'D. Communicate the change deployment.',
+      ],
+      correctAnswer: {'D. Communicate the change deployment.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 108,
+    question: 'A project manager is discussing with team members sensitive project information that should not be disclosed outside of the office. Which of the following BEST describes this type of information?',
+    answers: ProjectPlusAnswers(
+      id: 108,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Intellectual property.',
+        'B. Marketing.',
+        'C. Trade secret.',
+        'D. Top secret.',
+      ],
+      correctAnswer: {'C. Trade secret.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 109,
+    question: 'Which of the following would be the MOST beneficial to determine whether a project has met the defined objectives?',
+    answers: ProjectPlusAnswers(
+      id: 109,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Schedule variance.',
+        'B. Cost variance.',
+        'C. Work breakdown structure.',
+        'D. Key performance indicators.',
+      ],
+      correctAnswer: {'D. Key performance indicators.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 110,
+    question: 'A project manager is working on a project charter and has successfully documented the project objectives and the success criteria. Which of the following should the project manager '
+        'define NEXT to complete the project charter?',
+    answers: ProjectPlusAnswers(
+      id: 110,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Proposed solution design.',
+        'B. Preliminary scope statement.',
+        'C. Responsibility assignment matrix.',
+        'D. Initial budget baseline.',
+      ],
+      correctAnswer: {'B. Preliminary scope statement.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 111,
+    question: 'A project has been initiated to provide insurance forms for a company. A constraint for this project is that the insurance commission in each state where the company underwrites has to approve each form. Which of the following compliance considerations BEST describes this scenario?',
+    answers: ProjectPlusAnswers(
+      id: 111,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Regulatory impacts.',
+        'B. Environmental impacts.',
+        'C. Organizational impacts.',
+        'D. Sensitive data types.',
+      ],
+      correctAnswer: {'A. Regulatory impacts.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 112,
+    question: 'During the execution of production for a bike, a PM was hired. One month later, the PM has been receiving multiple project report requests from stakeholders. Which of the following should the PM do FIRST?',
+    answers: ProjectPlusAnswers(
+      id: 112,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Discuss the requests with the sponsor.',
+        'B. Prepare and send the information.',
+        'C. Assign this task to the project team.',
+        'D. Review the communication plan.',
+      ],
+      correctAnswer: {'D. Review the communication plan.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 113,
+    question: 'A team member finds a malfunctioning procedure in the system that will take a considerable amount of time to fix. Which of the following should be done FIRST?',
+    answers: ProjectPlusAnswers(
+      id: 113,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Update the risk register.',
+        'B. Document the finding in the change log.',
+        'C. Create a record in the issue log.',
+        'D. Detail a proposed solution.',
+      ],
+      correctAnswer: {'C. Create a record in the issue log.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 114,
+    question: 'A project team has identified a bug during user acceptance testing. Which of the following is the BEST method for communicating that bug to the development team?',
+    answers: ProjectPlusAnswers(
+      id: 114,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Call the development lead to discuss the fixes for the bug.',
+        'B. Include the bug issue as part of the status update for stakeholders.',
+        'C. Issue a change request.',
+        'D. Add the bug issue to the project\'s risk register.',
+      ],
+      correctAnswer: {'C. Issue a change request.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 115,
+    question: 'Internal project team members and a subject matter expert had a heated discussion about the client\'s needs. The deliverable is now at risk of being delayed. Which of the following '
+        'should be notified LAST?',
+    answers: ProjectPlusAnswers(
+      id: 115,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Program manager.',
+        'B. End user.',
+        'C. Steering committee.',
+        'D. Project sponsor.',
+      ],
+      correctAnswer: {'B. End user.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 116,
+    question: 'Which of the following methodologies/frameworks should be used when incremental value is expected in a timeboxed period?',
+    answers: ProjectPlusAnswers(
+      id: 116,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. PRINCE2.',
+        'B. Waterfall.',
+        'C. Scrum.',
+        'D. SLDC.',
+      ],
+      correctAnswer: {'C. Scrum.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 117,
+    question: 'A project manager has just finished overseeing the implementation of a new, self-service benefits enrollment system. Many employees, however, are calling the human resources team for'
+        ' assistance instead of using the self-service system. Which of the following should the project manager have done as part of the execution plan?',
+    answers: ProjectPlusAnswers(
+      id: 117,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Establish a minimally viable product.',
+        'B. Prepare new knowledge base documentation.',
+        'C. Update the project baseline and schedule.',
+        'D. Periodically review vendor performance.',
+      ],
+      correctAnswer: {'C. Update the project baseline and schedule.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 118,
+    question: 'Which of the following methods frequently delivers new code in an automatic way for development projects?',
+    answers: ProjectPlusAnswers(
+      id: 118,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Automated testing.',
+        'B. CI/CD process.',
+        'C. Validation checks.',
+        'D. Deploy sprint.',
+      ],
+      correctAnswer: {'B. CI/CD process.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 119,
+    question: 'When trying to calculate the expected monetary value for using a particular vendor, which of the following charts would be BEST to use?',
+    answers: ProjectPlusAnswers(
+      id: 119,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Decision tree.',
+        'B. Fishbone.',
+        'C. Histogram.',
+        'D. Pareto.',
+      ],
+      correctAnswer: {'A. Decision tree.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 120,
+    question: 'Two projects share resources. The mobile application project cannot start if the database renewal project has not started. Which of the following relationships describes this situation?',
+    answers: ProjectPlusAnswers(
+      id: 120,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Start-to-finish.',
+        'B. Start-to-start.',
+        'C. Finish-to-start.',
+        'D. Finish-to-finish.',
+      ],
+      correctAnswer: {'B. Start-to-start.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 121,
+    question: 'Which of the following is a consideration when determining a project\'s ESG factors?',
+    answers: ProjectPlusAnswers(
+      id: 121,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Project management methodology.',
+        'B. IT infrastructure security.',
+        'C. Proper accounting practices.',
+        'D. Corporate values compliance.',
+      ],
+      correctAnswer: {'D. Corporate values compliance.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 122,
+    question: 'In an agenda for a kickoff meeting, some time is set aside to complete a document that identifies each member of the project, the members\' roles and responsibilities for tasks, the '
+        'milestones, and the key decisions. In which of the following should this data be documented?',
+    answers: ProjectPlusAnswers(
+      id: 122,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. TOR.',
+        'B. WBS.',
+        'C. RAM.',
+        'D. SOW.',
+      ],
+      correctAnswer: {'C. RAM.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 123,
+    question: 'During a project sprint, an analyst explains multiple situations the team encountered after the previous day\'s sessions. The analyst then lists the tasks that need to be completed '
+        'before the end of the day. Which of the following meeting types is the team utilizing?',
+    answers: ProjectPlusAnswers(
+      id: 123,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Stand-up meeting.',
+        'B. Workshop meeting.',
+        'C. Kick-off meeting.',
+        'D. Presentation meeting.',
+      ],
+      correctAnswer: {'A. Stand-up meeting.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 124,
+    question: 'A project manager reviews the watch list and notices the probability of occurrence has increased for one item listed in this document; consequently, frequent monitoring is required. Which of the following tools should the project manager update NEXT?',
+    answers: ProjectPlusAnswers(
+      id: 124,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Defect log.',
+        'B. Stakeholder register.',
+        'C. Issue log.',
+        'D. Risk register.',
+      ],
+      correctAnswer: {'D. Risk register.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 125,
+    question: 'Which of the following IT elements allows developers to leverage existing code to integrate with other software systems?',
+    answers: ProjectPlusAnswers(
+      id: 125,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. SaaS.',
+        'B. API.',
+        'C. Databases.',
+        'D. End user applications.',
+      ],
+      correctAnswer: {'B. API.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 126,
+    question: 'A stakeholder notices a typo in the project management plan, specifically the word manager was spelled “manger”. Which of the following is the decision maker who can authorize the '
+        'change so the correction can be made?',
+    answers: ProjectPlusAnswers(
+      id: 126,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. PM.',
+        'B. CCB.',
+        'C. Sponsor.',
+        'D. Business analyst.',
+      ],
+      correctAnswer: {'A. PM.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 127,
+    question: 'A PM is working on the preliminary scope statement and identifies that this project has the same approach as another project that was completed last year. Which of the following '
+        'actions would the PM MOST likely perform?',
+    answers: ProjectPlusAnswers(
+      id: 127,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Call the previous PM for advice on risks and issues.',
+        'B. Ask the project sponsor to provide previous final project report results.',
+        'C. Complete the project charter using the other PM\'s subject matter expertise.',
+        'D. Use existing artifacts and accommodate based on the current project success criteria.',
+      ],
+      correctAnswer: {'D. Use existing artifacts and accommodate based on the current project success criteria.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 128,
+    question: 'A developer focused on a single story during an entire sprint. The story was underestimated and, therefore, was not completed. Which of the following steps should the Scrum team take NEXT?',
+    answers: ProjectPlusAnswers(
+      id: 128,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Assign more resources to complete similar stories in the future.',
+        'B. Break the stories into workable items that can be completed within one sprint.',
+        'C. Extend the sprint duration when required with the approval of the product owner.',
+        'D. Release the current progress into production and carry over the rest of the code for the next sprint.',
+      ],
+      correctAnswer: {'B. Break the stories into workable items that can be completed within one sprint.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 129,
+    question: 'During the planning phase, a project manager held a meeting to discuss meeting days, meeting times, meeting frequency, and tools to use. Which of the following will the project manager use to document this data?',
+    answers: ProjectPlusAnswers(
+      id: 129,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Project communication plan.',
+        'B. Project charter.',
+        'C. Project management plan.',
+        'D. Project plan.',
+      ],
+      correctAnswer: {'A. Project communication plan.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 130,
+    question: 'During the course of a project, an unexpected event occurs that could ultimately benefit the company. Which of the following is the company employing if the company decides to take '
+        'advantage of this opportunity?',
+    answers: ProjectPlusAnswers(
+      id: 130,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Exploit.',
+        'B. Enhance.',
+        'C. Accept.',
+        'D. Mitigate.',
+      ],
+      correctAnswer: {'A. Exploit.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 131,
+    question: 'A critical piece of equipment that is needed for the installation of a point-of-sale solution is delayed from the manufacturer. The delay will cause the project to be significantly '
+        'behind schedule. The project manager decides to buy the item at a higher cost from another vendor who can supply it immediately. Which of the following risk management approaches has the project manager taken?',
+    answers: ProjectPlusAnswers(
+      id: 131,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Mitigate.',
+        'B. Transfer.',
+        'C. Accept.',
+        'D. Share.',
+      ],
+      correctAnswer: {'B. Transfer.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 132,
+    question: 'Testing has been completed, and the new system is loaded in production and ready to be activated. Which of the following needs approval from the project sponsor?',
+    answers: ProjectPlusAnswers(
+      id: 132,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Project charter.',
+        'B. Deployment plan.',
+        'C. Business case.',
+        'D. Release schedule.',
+      ],
+      correctAnswer: {'D. Release schedule.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 133,
+    question: 'A project sponsor is notified that the committed turnaround time has been exceeded. The team member assigned to this item stated that the support of the management team was requested'
+        ' on time. Which of the following documents should be reviewed to understand the root cause of this situation?',
+    answers: ProjectPlusAnswers(
+      id: 133,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. RACI.',
+        'B. SOW.',
+        'C. Escalation path.',
+        'D. Communication plan.',
+      ],
+      correctAnswer: {'C. Escalation path.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 134,
+    question: 'During the kickoff meeting, a stakeholder raises a concern that an assigned responsibility is outside of the stakeholder\'s domain. Which of the following would MOST likely be the '
+        'reason?',
+    answers: ProjectPlusAnswers(
+      id: 134,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. The communication plan is outdated.',
+        'B. The project manager did not assess the stakeholders.',
+        'C. The project manager did not update the risk register.',
+        'D. The statement of work does not reflect the impacted stakeholders.',
+      ],
+      correctAnswer: {'B. The project manager did not assess the stakeholders.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 135,
+    question: 'The project kickoff concluded, and the sponsor indicated that the recently hired summer interns are authorized to work on the project. Which of the following should the project manager do NEXT?',
+    answers: ProjectPlusAnswers(
+      id: 135,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Host a risk workshop with all stakeholders to complete an initial risk assessment.',
+        'B. Work with the interns to develop a work breakdown structure and project schedule.',
+        'C. Conduct a skills assessment to determine the strengths and weaknesses of the staff.',
+        'D. Assign the resources to project tasks and encourage them to begin work immediately.',
+      ],
+      correctAnswer: {'C. Conduct a skills assessment to determine the strengths and weaknesses of the staff.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 136,
+    question: 'A project team is working remotely from different locations across the country. As part of a lessons-learned exercise, the project manager would like to identify the level of engagement among project team members. Which of the following would be the BEST tool for the project manager to use?',
+    answers: ProjectPlusAnswers(
+      id: 136,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Meeting chat.',
+        'B. Email.',
+        'C. Real-time survey.',
+        'D. Whiteboard.',
+      ],
+      correctAnswer: {'C. Real-time survey.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 137,
+    question: 'While defining technical requirements, the development team requested a tiered architecture setup. Which of the following types of environments BEST describes this architecture?',
+    answers: ProjectPlusAnswers(
+      id: 137,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Security environment.',
+        'B. Network environment.',
+        'C. Release environment.',
+        'D. Stage environment.',
+      ],
+      correctAnswer: {'B. Network environment.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 138,
+    question: 'A project manager reviews a new project charter and notices that the project objective is similar to a project that was done in the past. Which of the following actions should the project manager take?',
+    answers: ProjectPlusAnswers(
+      id: 138,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Review the existing artifacts and customize accordingly.',
+        'B. Utilize the existing artifacts to manage the project.',
+        'C. Ask the previous project manager for advice.',
+        'D. Notify the sponsor that this project duplicates a prior project.',
+      ],
+      correctAnswer: {'A. Review the existing artifacts and customize accordingly.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 139,
+    question: 'Which of the following is a web template that is used to create websites?',
+    answers: ProjectPlusAnswers(
+      id: 139,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. ERP.',
+        'B. CRM.',
+        'C. EDRMS.',
+        'D. CMS.',
+      ],
+      correctAnswer: {'D. CMS.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 140,
+    question: 'After a product is released for production, a tester performs a test to ensure its basic functionality is working as expected. Which of the following is the tester performing?',
+    answers: ProjectPlusAnswers(
+      id: 140,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Smoke test.',
+        'B. Stress test.',
+        'C. Penetration test.',
+        'D. Regression test.',
+      ],
+      correctAnswer: {'A. Smoke test.'},
+    ),
+  ),
+  ProjectPlusQuestion(
+    id: 141,
+    question: 'A project manager is performing planning tasks for a complex project at a small company. Which of the following items would be of GREATEST importance during planning?',
+    answers: ProjectPlusAnswers(
+      id: 141,
+      isMultipleChoice: false,
+      points: 1,
+      answers: [
+        'A. Defining the project objectives, scope, and success criteria.',
+        'B. Assessing the resources available for operational support after project implementation.',
+        'C. Providing updates and status reports to the project owner and stakeholders.',
+        'D. Developing a records management plan and reviewing existing project artifacts.',
+      ],
+      correctAnswer: {'A. Defining the project objectives, scope, and success criteria.'},
+    ),
+  ),
 ];
 
 /**
- Question #101 Topic 1
- During a demonstration, the product owner asked the team to add new scope to the backlog. Which of the following should the Scrum master do NEXT?
-A. Create a change request for the change advisory board.
-B. Work with the business analyst to document the new epic. C. Reject the change to prevent scope creep.
-D. Update the risk register and the work in the mitigation plan.
- Question #102 Topic 1
- Project A and Project B share a team member. The team member is falling behind on a task for Project B. Which of the following is the BEST action to take to get the task for Project B back on track?
-A. Negotiate to get more of the team member's available time.
-B. Assign the team member to work overtime to finish the task.
-C. Speed up completion of the task by assisting the team member. D. Have the project manager complete the task.
- Question #103 Topic 1
- A portfolio manager needs to provide the senior management team with a dynamic, high-level, monthly status update on all active projects in the portfolio. Which of the following should the manager use to accomplish this task?
-A. Dashboard B. Status report C. Gantt chart D. Email
-
-Question #104 Topic 1
- A project manager has been assigned to a project that involves replacing key operational equipment. The project manager is new to the industry and has learned that compliance requirements must be met. Which of the following should the project manager do FIRST?
-A. Trust that the project requirements fully document the necessary compliances.
-B. Meet with the end users to learn more about the compliance requirements.
-C. Research the compliance requirements related to the project to understand the implications. D. Make the QA specialist responsible for ensuring that the compliance requirements are met.
- Question #105 Topic 1
- Two team members have a minor disagreement on how a task should be performed. The project manager plans to meet with the team members to discuss the matter. Which of the following techniques should the project manager use to emphasize the areas of agreement and downplay the opposing views?
-A. Compromising B. Forcing
-C. Smoothing
-D. Collaborating
- Question #106 Topic 1
- A project manager is assigned to a large, complex project that is very new to the organization. Because of huge expenditures, the project cannot be cancelled after it starts. Which of the following is most important for the project manager to do FIRST?
-A. Carefully select the vendor.
-B. Identify and evaluate risks.
-C. Establish change management procedures. D. Evaluate the resource pool.
- Question #107 Topic 1
- As a result of an approved change request, the project manager updates the project plan to reflect the new feature addition and the revised production release date. Which of the following change
- control processes should the project manager do NEXT?
-A. Validate the change implementation. B. Implement the change.
-C. Conduct an impact assessment.
-D. Communicate the change deployment.
-
-Question #108 Topic 1
- A project manager is discussing with team members sensitive project information that should not be disclosed outside of the office. Which of the following BEST describes this type of information?
-A. Intellectual property B. Marketing
-C. Trade secret
-D. Top secret
- Question #109 Topic 1
- Which of the following would be the MOST beneficial to determine whether a project has met the defined objectives?
-A. Schedule variance
-B. Cost variance
-C. Work breakdown structure D. Key performance indicators
- Question #110 Topic 1
- A project manager is working on a project charter and has successfully documented the project objectives and the success criteria. Which of the following should the project manager define NEXT to
- complete the project charter?
-A. Proposed solution design
-B. Preliminary scope statement
-C. Responsibility assignment matrix D. Initial budget baseline
- Question #111 Topic 1
- A project has been initiated to provide insurance forms for a company. A constraint for this project is that the insurance commission in each state where the company underwrites has to approve each form. Which of the following compliance considerations BEST describes this scenario?
-A. Regulatory impacts
-B. Environmental impacts C. Organizational impacts D. Sensitive data types
-
-Question #112 Topic 1
- During the execution of production for a bike, a PM was hired. One month later, the PM has been receiving multiple project report requests from stakeholders. Which of the following should the PM do FIRST?
-A. Discuss the requests with the sponsor. B. Prepare and send the information.
-C. Assign this task to the project team. D. Review the communication plan.
- Question #113 Topic 1
- A team member finds a malfunctioning procedure in the system that will take a considerable amount of time to fix. Which of the following should be done FIRST?
-A. Update the risk register
-B. Document the finding in the change log. C. Create a record in the issue log
-D. Detail a proposed solution.
- Question #114 Topic 1
- A project team has identified a bug during user acceptance testing. Which of the following is the BEST method for communicating that bug to the development team?
-A. Call the development lead to discuss the fixes for the bug.
-B. Include the bug issue as part of the status update for stakeholders. C. Issue a change request.
-D. Add the bug issue to the project's risk register.
- Question #115 Topic 1
- Internal project team members and a subject matter expert had a heated discussion about the client's needs. The deliverable is now at risk of being delayed. Which of the following should be
- notified LAST?
-A. Program manager B. End user
-C. Steering committee D. Project sponsor
-
-Question #116 Topic 1
- Which of the following methodologies/frameworks should be used when incremental value is expected in a timeboxed period?
-A. PRINCE2 B. Waterfall C. Scrum D. SLDC
- Question #117 Topic 1
- A project manager has just finished overseeing the implementation of a new, self-service benefits enrollment system. Many employees, however, are calling the human resources team for assistance
- instead of using the self-service system. Which of the following should the project manager have done as part of the execution plan?
-A. Establish a minimally viable product.
-B. Prepare new knowledge base documentation. C. Update the project baseline and schedule.
-D. Periodically review vendor performance.
- Question #118 Topic 1
- Which of the following methods frequently delivers new code in an automatic way for development projects?
-A. Automated testing B. CI/CD process
-C. Validation checks D. Deploy sprint
- Question #119 Topic 1
- When trying to calculate the expected monetary value for using a particular vendor, which of the following charts would be BEST to use?
-A. Decision tree B. Fishbone
-C. Histogram
-D. Pareto
-
-Question #120 Topic 1
- Two projects share resources. The mobile application project cannot start if the database renewal project has not started. Which of the following relationships describes this situation?
-A. Start-to-finish B. Start-to-start C. Finish-to-start D. Finish-to-finish
- Question #121 Topic 1
- Which of the following is a consideration when determining a project's ESG factors?
-A. Project management methodology B. IT infrastructure security
-C. Proper accounting practices
-D. Corporate values compliance
- Question #122 Topic 1
- In an agenda for a kickoff meeting, some time is set aside to complete a document that identifies each member of the project, the members' roles and responsibilities for tasks, the milestones, and
- the key decisions. In which of the following should this data be documented?
-A. TOR B. WBS C. RAM D. SOW
- Question #123 Topic 1
- During a project sprint, an analyst explains multiple situations the team encountered after the previous day's sessions. The analyst then lists the tasks that need to be completed before the end of the day. Which of the following meeting types is the team utilizing?
-A. Stand-up meeting
-B. Workshop meeting C. Kick-off meeting
-D. Presentation meeting
-
-Question #124 Topic 1
- A project manager reviews the watch list and notices the probability of occurrence has increased for one item listed in this document; consequently, frequent monitoring is required. Which of the following tools should the project manager update NEXT?
-A. Defect log
-B. Stakeholder register C. Issue log
-D. Risk register
- Question #125 Topic 1
- Which of the following IT elements allows developers to leverage existing code to integrate with other software systems?
-A. SaaS
-B. API
-C. Databases
-D. End user applications
- Question #126 Topic 1
- A stakeholder notices a typo in the project management plan, specifically the word manager was spelled “manger”. Which of the following is the decision maker who can authorize the change so the
- correction can be made?
-A. PM
-B. CCB
-C. Sponsor
-D. Business analyst
- Question #127 Topic 1
- A PM is working on the preliminary scope statement and identifies that this project has the same approach as another project that was completed last year. Which of the following actions would the
- PM MOST likely perform?
-A. Call the previous PM for advice on risks and issues.
-B. Ask the project sponsor to provide previous final project report results.
-C. Complete the project charter using the other PM's subject matter expertise.
-D. Use existing artifacts and accommodate based on the current project success criteria.
-
-Question #128 Topic 1
- A developer focused on a single story during an entire sprint. The story was underestimated and, therefore, was not completed. Which of the following steps should the Scrum team take NEXT?
-A. Assign more resources to complete similar stories in the future.
-B. Break the stories into workable items that can be completed within one sprint.
-C. Extend the sprint duration when required with the approval of the product owner.
-D. Release the current progress into production and carry over the rest of the code for the next sprint.
- Question #129 Topic 1
- During the planning phase, a project manager held a meeting to discuss meeting days, meeting times, meeting frequency, and tools to use. Which of the following will the project manager use to document this data?
-A. Project communication plan B. Project charter
-C. Project management plan D. Project plan
- Question #130 Topic 1
- During the course of a project, an unexpected event occurs that could ultimately benefit the company. Which of the following is the company employing if the company decides to take advantage of
- this opportunity?
-A. Exploit B. Enhance C. Accept D. Mitigate
- Question #131 Topic 1
- A critical piece of equipment that is needed for the installation of a point-of-sale solution is delayed from the manufacturer. The delay will cause the project to be significantly behind schedule.
-  The project manager decides to buy the item at a higher cost from another vendor who can supply it immediately. Which of the following risk management approaches has the project manager taken?
-A. Mitigate B. Transfer C. Accept D. Share
-
-Question #132 Topic 1
- Testing has been completed, and the new system is loaded in production and ready to be activated. Which of the following needs approval from the project sponsor?
-A. Project charter B. Deployment plan C. Business case
-D. Release schedule
- Question #133 Topic 1
- A project sponsor is notified that the committed turnaround time has been exceeded. The team member assigned to this item stated that the support of the management team was requested on time. Which
-  of the following documents should be reviewed to understand the root cause of this situation?
-A. RACI
-B. SOW
-C. Escalation path
-D. Communication plan
- Question #134 Topic 1
- During the kickoff meeting, a stakeholder raises a concern that an assigned responsibility is outside of the stakeholder's domain. Which of the following would MOST likely be the reason?
-A. The communication plan is outdated.
-B. The project manager did not assess the stakeholders.
-C. The project manager did not update the risk register.
-D. The statement of work does not reflect the impacted stakeholders.
- Question #135 Topic 1
- The project kickoff concluded, and the sponsor indicated that the recently hired summer interns are authorized to work on the project. Which of the following should the project manager do NEXT?
-A. Host a risk workshop with all stakeholders to complete an initial risk assessment.
-B. Work with the interns to develop a work breakdown structure and project schedule.
-C. Conduct a skills assessment to determine the strengths and weaknesses of the staff. D. Assign the resources to project tasks and encourage them to begin work immediately.
-
-Question #136 Topic 1
- A project team is working remotely from different locations across the country. As part of a lessons-learned exercise, the project manager would like to identify the level of engagement among project team members. Which of the following would be the BEST tool for the project manager to use?
-A. Meeting chat
-B. Email
-C. Real-time survey D. Whiteboard
- Question #137 Topic 1
- While defining technical requirements, the development team requested a tiered architecture setup. Which of the following types of environments BEST describes this architecture?
-A. Security environment B. Network environment C. Release environment D. Stage environment
- Question #138 Topic 1
- A project manager reviews a new project charter and notices that the project objective is similar to a project that was done in the past. Which of the following actions should the project manager take?
-A. Review the existing artifacts and customize accordingly.
-B. Utilize the existing artifacts to manage the project.
-C. Ask the previous project manager for advice.
-D. Notify the sponsor that this project duplicates a prior project.
- Question #139 Topic 1
- Which of the following is a web template that is used to create websites?
-A. ERP
-B. CRM C. EDRMS D. CMS
-
-Question #140 Topic 1
-After a product is released for production, a tester performs a test to ensure its basic functionality is working as expected. Which of the following is the tester performing?
-A. Smoke test
-B. Stress test
-C. Penetration test D. Regression test
-Question #141 Topic 1
-A project manager is performing planning tasks for a complex project at a small company. Which of the following items would be of GREATEST importance during planning?
-A. Defining the project objectives, scope, and success criteria
-B. Assessing the resources available for operational support after project implementation C. Providing updates and status reports to the project owner and stakeholders
-D. Developing a records management plan and reviewing existing project artifacts
 
 **/

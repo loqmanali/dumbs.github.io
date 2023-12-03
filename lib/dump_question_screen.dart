@@ -9,7 +9,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/widgets/custom_text.dart';
 import 'widgets/footer_widget.dart';
 import 'widgets/page_view_widget.dart';
-import 'project_plus_dump/project_plus_question.dart';
 
 class DumpQuestionScreen extends StatefulWidget {
   const DumpQuestionScreen({super.key, required this.questions, required this.title});
@@ -35,8 +34,8 @@ class _StateProjectPlusDump extends State<DumpQuestionScreen> {
               SizedBox(
                 width: context.width * 0.35,
                 child: CustomDropDownWidget<QuestionModel>(
-                  value: projectPlusQuestion[context.read<ProjectPlusCubit>().currentQuestionIndex],
-                  items: projectPlusQuestion.map((e) {
+                  value: widget.questions[context.read<ProjectPlusCubit>().currentQuestionIndex],
+                  items: widget.questions.map((e) {
                     return DropdownMenuItem<QuestionModel>(
                       value: e,
                       child: CustomText(text: 'Question #${e.id}'),
@@ -45,8 +44,8 @@ class _StateProjectPlusDump extends State<DumpQuestionScreen> {
                   label: 'Select Question',
                   onChanged: (value) {
                     setState(() {
-                      pageController.jumpToPage(projectPlusQuestion.indexOf(value!));
-                      context.read<ProjectPlusCubit>().currentQuestionIndex = projectPlusQuestion.indexOf(value);
+                      pageController.jumpToPage(widget.questions.indexOf(value!));
+                      context.read<ProjectPlusCubit>().currentQuestionIndex = widget.questions.indexOf(value);
                     });
                   },
                 ),

@@ -500,6 +500,86 @@ List<QuestionModel> itilQuestion = [
       correctAnswer: {'A. Information security management.'},
     ),
   ),
+  QuestionModel(
+    id: 32,
+    question: 'Which wil help solve incidents more quickly?',
+    answers: AnswersModel(
+      id: 32,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Target resolution times.',
+        'B. Escalating incidents ot support teams.',
+        'C. Collaboration between teams.',
+        'D. Detailed procedural steps for incident investigation.',
+      ],
+      correctAnswer: {'D. Detailed procedural steps for incident investigation.'},
+    ),
+  ),
+  QuestionModel(
+    id: 33,
+    question: 'When is the earliest that a workaround can be documented in "problem management"?',
+    answers: AnswersModel(
+      id: 33,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. After the problem has been logged.',
+        'B. After the problem has been prioritized.',
+        'C. After the problem has been analyzed.',
+        'D. After the problem has been resolved.',
+      ],
+      correctAnswer: {'C. After the problem has been analyzed.'},
+    ),
+  ),
+  QuestionModel(
+    id: 34,
+    question: 'Which is an activity of the "problem management" practice?',
+    answers: AnswersModel(
+      id: 34,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Restoration of normal service operation as quickly as possible.',
+        'B. Prioritization of problems based on the risk that they pose.',
+        'C. Authorization of changes to resolve the cause of problems.',
+        'D. Resolution of incidents in a time that meets customer expectations.',
+      ],
+      correctAnswer: {'B. Prioritization of problems based on the risk that they pose.'},
+    ),
+  ),
+  QuestionModel(
+    id: 35,
+    question: 'Which practice is MOST likely to benefit from the use of chat bots?',
+    answers: AnswersModel(
+      id: 35,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Service level management.',
+        'B. Change enablement.',
+        'C. Continual improvement.',
+        'D. Service desk.',
+      ],
+      correctAnswer: {'D. Service desk.'},
+    ),
+  ),
+  QuestionModel(
+    id: 36,
+    question: 'Where are the details of the required performance outcomes of a service defined?',
+    answers: AnswersModel(
+      id: 36,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Service level agreements.',
+        'B. Service requests.',
+        'C. Service components.',
+        'D. Service offerings.',
+      ],
+      correctAnswer: {'A. Service level agreements.'},
+    ),
+  ),
 ];
 
 

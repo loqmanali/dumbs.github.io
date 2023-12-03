@@ -87,31 +87,7 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
     super.initState();
     _selectedOption = <int>{};
     optionsList = widget.options.toList();
-    // _loadSelectedOption();
   }
-
-  //
-  // // Load selected options from SharedPreferences
-  // Future<void> _loadSelectedOption() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   Set<int> loadedOptions = (prefs.getStringList('selectedOptions') ?? []).map((e) => int.parse(e)).toSet();
-  //
-  //   setState(() {
-  //     _selectedOption = loadedOptions;
-  //     log('loadedOptions: $loadedOptions', name: 'button_filter_widget.dart');
-  //
-  //     // If there are saved options, notify the parent widget
-  //     if (_selectedOption.isNotEmpty) {
-  //       widget.setOptions(_selectedOption.map((e) => optionsList[e]).toSet());
-  //     }
-  //   });
-  // }
-  //
-  // // Save selected options to SharedPreferences
-  // Future<void> _saveSelectedOption() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   prefs.setStringList('selectedOptions', _selectedOption.map((e) => e.toString()).toList());
-  // }
 
   @override
   Widget build(BuildContext context) {

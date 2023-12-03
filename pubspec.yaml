@@ -35,6 +35,9 @@ dependencies:
   get_it:
   cached_network_image:
   flutter_widget_from_html: ^0.14.6
+  flutter_bloc:
+  bloc:
+  equatable:
 
 
 dev_dependencies:

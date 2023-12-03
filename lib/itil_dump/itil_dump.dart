@@ -1,6 +1,11 @@
+import 'package:dumbs/core/extensions/media_query_extension.dart';
 import 'package:dumbs/project_plus_dump/project_plus_dump.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../core/widgets/custom_drop_down_widget.dart';
+import '../core/widgets/custom_text.dart';
+import '../project_plus_dump/cubit/project_plus_cubit.dart';
 import '../question_model.dart';
 
 class ITILDumps extends StatefulWidget {
@@ -17,7 +22,28 @@ class _ITILDumpsState extends State<ITILDumps> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ITIL Dumps'),
+        title: const Text('ITIL'),
+        actions: [
+          SizedBox(
+            width: context.width * 0.33,
+            child: CustomDropDownWidget<QuestionModel>(
+              value: itilQuestion[context.read<ProjectPlusCubit>().currentQuestionIndex],
+              items: itilQuestion.map((e) {
+                return DropdownMenuItem<QuestionModel>(
+                  value: e,
+                  child: CustomText(text: 'Question #${e.id}'),
+                );
+              }).toList(),
+              label: 'Select Question',
+              onChanged: (value) {
+                setState(() {
+                  pageController.jumpToPage(itilQuestion.indexOf(value!));
+                  context.read<ProjectPlusCubit>().currentQuestionIndex = itilQuestion.indexOf(value);
+                });
+              },
+            ),
+          ),
+        ],
       ),
       body: Stack(
         alignment: Alignment.bottomCenter,

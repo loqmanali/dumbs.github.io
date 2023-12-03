@@ -1,5 +1,6 @@
 
 import 'package:dumbs/core/widgets/coustom_sized_box.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -552,8 +553,8 @@ extension ContextExtension on BuildContext {
                                 color: Colors.white,
                               ),
                               child: Icon(
-                                status == ToastStatus.error ? Icons.close : status == ToastStatus.warning ? Icons.warning : Icons.check,
-                                color: status == ToastStatus.error ? Colors.red : status == ToastStatus.warning ? Colors.yellow : Colors.green,
+                                status == ToastStatus.error ? Icons.close : status == ToastStatus.warning ? CupertinoIcons.exclamationmark : Icons.check,
+                                color: status == ToastStatus.error ? Colors.red : status == ToastStatus.warning ? Colors.orange : Colors.green,
                               ),
                             ),
                             0.5.width,

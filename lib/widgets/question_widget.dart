@@ -7,11 +7,10 @@ import 'package:dumbs/core/widgets/coustom_sized_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
-
-import 'core/helpers/cache_helper.dart';
-import 'core/helpers/di.dart';
-import 'core/widgets/button_filter_widget.dart';
-import 'core/widgets/custom_text.dart';
+import '../core/helpers/cache_helper.dart';
+import '../core/helpers/di.dart';
+import '../core/widgets/button_filter_widget.dart';
+import '../core/widgets/custom_text.dart';
 
 class QuestionWidget<T> extends StatefulWidget {
   final T question;
@@ -43,12 +42,9 @@ class _QuestionWidgetState extends State<QuestionWidget> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // CustomText.h5(
-                  //   text: 'Question #${widget.question.id}',
-                  //   color: Colors.indigo,
-                  // ),
                   SelectableText(
                     'Question #${widget.question.id}',
+                    selectionControls: controls,
                     style: const TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.bold,
@@ -145,9 +141,9 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                           subtitle: '',
                           status: ToastStatus.success,
                         );
-                        final getData = di<CacheHelper>().getData(key: 'question_${widget.question.id}');
-                        log('getData: $getData', name: 'QuestionWidget');
-                        savedData = getData ?? '';
+                        // final getData = di<CacheHelper>().getData(key: 'question_${widget.question.id}');
+                        // log('getData: $getData', name: 'QuestionWidget');
+                        // savedData = getData ?? '';
                         setState(() {
                           showResult = true;
                         });
@@ -216,9 +212,6 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                       child: HtmlWidget(
                         widget.question.answers.correctAnswer.reduce((value, element) => '$value, $element'),
                       ),
-                      // child: CustomText(
-                      //   text: widget.question.answers.correctAnswer.reduce((value, element) => '$value, $element'),
-                      // ),
                     ),
                   )
                 : const SizedBox(),

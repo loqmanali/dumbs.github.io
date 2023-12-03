@@ -128,7 +128,6 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
             }
             widget.setOptions(selectedOptionsName);
             log('selectedOptionsName: $selectedOptionsName', name: 'button_filter_widget.dart');
-            // _saveSelectedOption();
           },
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
@@ -143,10 +142,6 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
                   color: _selectedOption.contains(index) ? Colors.transparent : widget.borderColor,
                 ),
               ),
-              // child: CustomText(
-              //   text: item.toString(),
-              //   color: _selectedOption.contains(index) ? widget.selectedTextColor : widget.unselectedTextColor,
-              // ),
               child: HtmlWidget(
                 item.toString(),
                 textStyle: TextStyle(
@@ -188,15 +183,3 @@ class _ButtonFilterOptionsWidgetState<T> extends State<ButtonFilterOptionsWidget
     // );
   }
 }
-
-// extension IterableExtension<T> on Iterable<T> {
-//   Iterable<E> whereIndexed<E>(bool Function(int index, T element) test) sync* {
-//     var index = 0;
-//     for (final element in this) {
-//       if (test(index, element)) {
-//         yield element;
-//       }
-//       index += 1;
-//     }
-//   }
-// }

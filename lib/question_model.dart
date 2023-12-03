@@ -21,3 +21,10 @@ class AnswersModel {
     required this.points,
   });
 }
+
+class ProjectsModel {
+  final String name;
+  final List<QuestionModel> questions;
+
+  ProjectsModel({required this.name, required this.questions});
+}

@@ -1,7 +1,11 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../itil_dump/itil_question.dart';
 import '../../question_model.dart';
+import '../project_plus_question.dart';
 part 'project_plus_state.dart';
 
 class ProjectPlusCubit extends Cubit<ProjectPlusState> {
@@ -32,4 +36,16 @@ class ProjectPlusCubit extends Cubit<ProjectPlusState> {
       emit(ProjectPlusDecreaseQuestionState());
     }
   }
+
+  List<ProjectsModel> projects = [
+    ProjectsModel(
+      name: 'Project+',
+      questions: projectPlusQuestion,
+    ),
+    ProjectsModel(
+      name: 'ITIL',
+      questions: itilQuestion,
+    ),
+  ];
+
 }

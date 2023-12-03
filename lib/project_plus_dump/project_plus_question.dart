@@ -636,12 +636,12 @@ List<QuestionModel> projectPlusQuestion = [
       isMultipleChoice: false,
       points: 1,
       answers: [
-        '''<p>A. <img src="assets/Q38-A.png"></p>''',
-        '<p>B. <img src="assets/Q38-B.png"></p>',
-        '<p>C. <img src="assets/Q38-C.png"></p>',
-        '<p>D. <img src="assets/Q38-D.png"></p>',
+        '''<p>A. <img src="assets/Q38-A.png" alt=""></p>''',
+        '<p>B. <img src="assets/Q38-B.png" alt=""></p>',
+        '<p>C. <img src="assets/Q38-C.png" alt=""></p>',
+        '<p>D. <img src="assets/Q38-D.png" alt=""></p>',
       ],
-      correctAnswer: {'''<p>A. <img src="assets/Q38-A.png"></p>'''},
+      correctAnswer: {'''<p>A. <img src="assets/Q38-A.png" alt=""></p>'''},
     ),
   ),
   QuestionModel(

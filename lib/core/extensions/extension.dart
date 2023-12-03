@@ -552,8 +552,8 @@ extension ContextExtension on BuildContext {
                                 color: Colors.white,
                               ),
                               child: Icon(
-                                status == ToastStatus.error ? Icons.close : Icons.check,
-                                color: status == ToastStatus.error ? Colors.red : Colors.green,
+                                status == ToastStatus.error ? Icons.close : status == ToastStatus.warning ? Icons.warning : Icons.check,
+                                color: status == ToastStatus.error ? Colors.red : status == ToastStatus.warning ? Colors.yellow : Colors.green,
                               ),
                             ),
                             0.5.width,
@@ -566,10 +566,10 @@ extension ContextExtension on BuildContext {
                                     color: Colors.white,
                                     fontWeight: FontWeight.w600,
                                   ),
-                                  CustomText(
-                                    text: subtitle,
-                                    color: Colors.white,
-                                  ),
+                                  // CustomText(
+                                  //   text: subtitle,
+                                  //   color: Colors.white,
+                                  // ),
                                 ],
                               ),
                             ),

@@ -30,6 +30,8 @@ class HomeScreen extends StatelessWidget {
                 child: InkWell(
                   onTap: () {
                     context.read<ProjectPlusCubit>().currentQuestionIndex = 0;
+                    context.read<ProjectPlusCubit>().totalScore = 0;
+                    context.read<ProjectPlusCubit>().questionAnsweredMap = {};
                     Navigator.push(
                       context,
                       MaterialPageRoute(

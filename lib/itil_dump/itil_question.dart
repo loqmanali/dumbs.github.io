@@ -580,10 +580,259 @@ List<QuestionModel> itilQuestion = [
       correctAnswer: {'A. Service level agreements.'},
     ),
   ),
+  QuestionModel(
+    id: 37,
+    question: 'Which value chain activity ensures a shared understanding of the current status and required direction for all products and services?',
+    answers: AnswersModel(
+      id: 37,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Plan.',
+        'B. Improve.',
+        'C. Design and transition.',
+        'D. Deliver and support.',
+      ],
+      correctAnswer: {'A. Plan.'},
+    ),
+  ),
+  QuestionModel(
+    id: 38,
+    question: 'Which practice has the purpose of ensuring that the organization\'s suppliers and their performance are managed appropriately to support the provision of seamless, quality products '
+        'and services?',
+    answers: AnswersModel(
+      id: 38,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Release management.',
+        'B. Supplier management.',
+        'C. Service management.',
+        'D. Relationship management.',
+      ],
+      correctAnswer: {'B. Supplier management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 39,
+    question: 'Which two practices interact the MOST with the service desk practice?',
+    answers: AnswersModel(
+      id: 39,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Incident management and service request management.',
+        'B. Service request management and deployment management.',
+        'C. Deployment management and change enablement.',
+        'D. Change enablement and incident management.',
+      ],
+      correctAnswer: {'A. Incident management and service request management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 40,
+    question: "Which is an activity of the 'incident management' practice?",
+    answers: AnswersModel(
+      id: 40,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Assessing and prioritizing improvement opportunities.',
+        'B. Performing service reviews with customers.',
+        'C. Providing good-quality updates when expected.',
+        'D. Automating service requests to the greatest degree possible.',
+      ],
+      correctAnswer: {'C. Providing good-quality updates when expected.'},
+    ),
+  ),
+  QuestionModel(
+    id: 41,
+    question: "Identify the missing words in the following sentence: A user is [?] that uses services.",
+    answers: AnswersModel(
+      id: 41,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. an organization.',
+        'B. a role.',
+        'C. a team.',
+        'D. a supplier.',
+      ],
+      correctAnswer: {'B. a role.'},
+    ),
+  ),
+  QuestionModel(
+    id: 42,
+    question: "Which is included in the purpose of the 'change enablement' practice?",
+    answers: AnswersModel(
+      id: 42,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Make new and changed services available for use.',
+        'B. Ensure that risks have been properly assessed.',
+        'C. Record and report selected changes of state.',
+        'D. Plan and manage the full lifecycle of alIT assets.',
+      ],
+      correctAnswer: {'B. Ensure that risks have been properly assessed.'},
+    ),
+  ),
+  QuestionModel(
+    id: 43,
+    question: "Which activity is part of the 'continual improvement' practice?",
+    answers: AnswersModel(
+      id: 43,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Identifying the cause of incidents and recommending related improvements.',
+        'B. Authorizing changes to implement improvements.',
+        'C. Logging and managing incidents that result in improvement opportunities.',
+        'D. Making business cases for improvement action.',
+      ],
+      correctAnswer: {'D. Making business cases for improvement action.'},
+    ),
+  ),
+  QuestionModel(
+    id: 44,
+    question: "In which step of the 'continual improvement model' is an improvement plan implemented?",
+    answers: AnswersModel(
+      id: 44,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. What is the vision?.',
+        'B. How do we get there?.',
+        'C. Take action.',
+        'D. Did we get there?.',
+      ],
+      correctAnswer: {'C. Take action.'},
+    ),
+  ),
+  QuestionModel(
+    id: 45,
+    question: "Which is the BEST example of a standard change?",
+    answers: AnswersModel(
+      id: 45,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. There view and authorization of a change requested by a customer.',
+        'B. The implementation of a critical software patch ni response to a vendor security issue.',
+        'C. The installation of a software application in response to a service request.',
+        'D. The replacement of a component in response to a major incident.',
+      ],
+      correctAnswer: {'C. The installation of a software application in response to a service request.'},
+    ),
+  ),
+  QuestionModel(
+    id: 46,
+    question: "Which statement about the automation of service requests is CORRECT?",
+    answers: AnswersModel(
+      id: 46,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Service requests that cannot be automated should be handled as incidents.',
+        'B. Service requests and their fulfilment should be automated as much as possible.',
+        'C. Service requests that cannot be automated should be handled as problems.',
+        'D. Service requests and their fulfilment should be carried out by service desk staff without automation.',
+      ],
+      correctAnswer: {'B. Service requests and their fulfilment should be automated as much as possible.'},
+    ),
+  ),
+  QuestionModel(
+    id: 47,
+    question: "Which can act as an operating model for an organization?",
+    answers: AnswersModel(
+      id: 47,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. The four dimensions of service management.',
+        'B. The service value chain.',
+        'C. The ITIL guiding principles.',
+        'D. Continual improvement.',
+      ],
+      correctAnswer: {'B. The service value chain.'},
+    ),
+  ),
 ];
 
 
 /**
 
+
+    Question #48
+    Which practice recommends the use of event-based surveys to gather feedback from customers?
+    A. Service level management
+    B. Change enablement
+    C. Service request management
+    D. Problem management
+    Correct Answer: A
+
+    Question #49
+    Which statement about change authorities is CORRECT?
+    A. Change authorities are only required for authorizing emergency changes
+    B. Change authorities are assigned when each change is deployed
+    C. Change authorities are only required for authorizing normal changes
+    D. Change authorities are assigned for each type of change and change model
+    Correct Answer: D
+
+    Question #50
+    Which practice improves customer and user satisfaction by reducing the negative impact of service interruptions?
+    A. Service request management
+    B. Service level management
+    C. Incident management
+    D. Change enablement
+    Correct Answer: C
+
+    Question #51
+    Which will NOT be handled as a service request?
+    A. The degradation of a service
+    B. The replacement of a toner cartridge
+    C. The provision of a laptop
+    D. A complaint about a support team
+    Correct Answer: A
+
+    Question #52
+    A service offering may include goods, access to resources, and service actions. Which is an example of a service action?
+    A. A mobile phone enables a user to work remotely
+    B. A password allows a user connect to a WiFi network
+    C. A license allows a user to install a software product
+    D. A service desk agent provides support to a user
+    Correct Answer: D
+
+    Question #53
+    Which describes a CORRECT approach to change authorization?
+    A. Changes included in the change schedule are pre-authorized and do not need additional authorization
+    B. Normal changes should be assessed and authorized before they are deployed
+    C. Emergency changes should be authorized by as many people as possible to reduce risk
+    D. Normal changes are typically implemented as service requests and authorized by the service desk
+    Correct Answer: B
+
+    Question #54
+    Which statement about a service value stream is CORRECT?
+    A. It uses prescriptive inputs and outputs
+    B. It is a value chain activity
+    C. It integrates practices for a specific scenario
+    D. It is used to provide governance
+    Correct Answer: C
+
+    Question #55
+    Which statement about outputs is CORRECT?
+    A. They consist of several outcomes
+    B. They capture customer demand for services
+    C. They contribute to the achievement of outcomes
+    D. They describe how the service performs
+    Correct Answer: C
+
+    Question #56
+    Which is an example of a business related measurement?
+    A. The number of passengers checked in
+    B. The average time to respond to change requests
+    C. The average resolution time for incidents
+    D. The number of problems resolved
+    Correct Answer: A
 
  */

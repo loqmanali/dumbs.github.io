@@ -27,6 +27,7 @@ class _StateProjectPlusDump extends State<DumpQuestionScreen> {
   Widget build(BuildContext context) {
     return BlocBuilder<ProjectPlusCubit, ProjectPlusState>(
       builder: (context, state) {
+        final cubit = context.read<ProjectPlusCubit>();
         return Scaffold(
           appBar: AppBar(
             title: Text(widget.title),
@@ -34,7 +35,7 @@ class _StateProjectPlusDump extends State<DumpQuestionScreen> {
               SizedBox(
                 width: context.width * 0.35,
                 child: CustomDropDownWidget<QuestionModel>(
-                  value: widget.questions[context.read<ProjectPlusCubit>().currentQuestionIndex],
+                  value: widget.questions[cubit.currentQuestionIndex],
                   items: widget.questions.map((e) {
                     return DropdownMenuItem<QuestionModel>(
                       value: e,
@@ -45,7 +46,7 @@ class _StateProjectPlusDump extends State<DumpQuestionScreen> {
                   onChanged: (value) {
                     setState(() {
                       pageController.jumpToPage(widget.questions.indexOf(value!));
-                      context.read<ProjectPlusCubit>().currentQuestionIndex = widget.questions.indexOf(value);
+                      cubit.currentQuestionIndex = widget.questions.indexOf(value);
                     });
                   },
                 ),

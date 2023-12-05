@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,6 +12,8 @@ class ProjectPlusCubit extends Cubit<ProjectPlusState> {
   static ProjectPlusCubit get(context) => BlocProvider.of(context);
 
   int currentQuestionIndex = 0;
+  int totalScore = 0;
+  Map<int, bool> questionAnsweredMap = {};
 
   PageController pageController = PageController(initialPage: 0);
 

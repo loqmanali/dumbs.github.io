@@ -122,8 +122,8 @@ class Alerts {
     required String defaultActionText,
     required Function()? onPressedOk,
   }) async {
-    if (!Platform.isIOS) {
-      showDialog(
+    // if (!Platform.isIOS) {
+      showAdaptiveDialog(
           context: context,
           builder: (context) {
             return AlertDialog(
@@ -148,38 +148,38 @@ class Alerts {
               ],
             );
           });
-    } else {
-      return showCupertinoDialog(
-          context: context,
-          builder: (context) {
-            return CupertinoAlertDialog(
-              title: Text(title, style: titleStyle),
-              content: Dialog(
-                elevation: 0.0,
-                backgroundColor: Colors.transparent,
-                insetPadding: const EdgeInsets.all(0.0),
-                child: content,
-              ),
-              actions: <Widget>[
-                if (cancelActionText != null)
-                  CupertinoDialogAction(
-                    onPressed: () => Navigator.of(context).pop(false),
-                    child: Text(
-                      cancelActionText,
-                      style: const TextStyle(color: Colors.red),
-                    ),
-                  ),
-                CupertinoDialogAction(
-                  onPressed: onPressedOk,
-                  child: Text(
-                    defaultActionText,
-                    style: const TextStyle(color: Colors.black),
-                  ),
-                ),
-              ],
-            );
-          });
-    }
+    // } else {
+    //   return showCupertinoDialog(
+    //       context: context,
+    //       builder: (context) {
+    //         return CupertinoAlertDialog(
+    //           title: Text(title, style: titleStyle),
+    //           content: Dialog(
+    //             elevation: 0.0,
+    //             backgroundColor: Colors.transparent,
+    //             insetPadding: const EdgeInsets.all(0.0),
+    //             child: content,
+    //           ),
+    //           actions: <Widget>[
+    //             if (cancelActionText != null)
+    //               CupertinoDialogAction(
+    //                 onPressed: () => Navigator.of(context).pop(false),
+    //                 child: Text(
+    //                   cancelActionText,
+    //                   style: const TextStyle(color: Colors.red),
+    //                 ),
+    //               ),
+    //             CupertinoDialogAction(
+    //               onPressed: onPressedOk,
+    //               child: Text(
+    //                 defaultActionText,
+    //                 style: const TextStyle(color: Colors.black),
+    //               ),
+    //             ),
+    //           ],
+    //         );
+    //       });
+    // }
   }
 
   static showImage({context, Function()? camera, Function()? gallery}) {

@@ -5,6 +5,7 @@ import 'package:dumbs/core/extensions/media_query_extension.dart';
 import 'package:dumbs/core/widgets/alerts.dart';
 import 'package:dumbs/core/widgets/coustom_sized_box.dart';
 import 'package:dumbs/project_plus_dump/cubit/project_plus_cubit.dart';
+import 'package:dumbs/project_plus_dump/project_plus_question.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -41,6 +42,8 @@ class _QuestionWidgetState extends State<QuestionWidget> {
         return LayoutBuilder(builder: (context, constraints) {
           return SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   'Total Score: ${context.read<ProjectPlusCubit>().totalScore}',
@@ -153,83 +156,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                               log('values: ${cubit.questionAnsweredMap}', name: 'QuestionWidget');
                               log('values: ${values.length}', name: 'Values.length');
                               log('correctAnswer: ${widget.question.answers.correctAnswer}', name: 'QuestionWidget');
-                              log('values: ${cubit.currentQuestionIndex}', name: 'QuestionWidget');
-
-                              /// if the last question is answered, show the result dialog and reset the questionAnsweredMap and currentQuestionIndex to 0
-                              /// and show the percentage of the correct answers and the wrong answers and the total score and calculate the percentage of the correct answers 70% and the wrong
-                              /// answers 30% and if the percentage of the correct answers is greater than or equal to 70% then show the success dialog and if the percentage of the wrong answers
-
-                              // if (cubit.currentQuestionIndex == 140) {
-                              //   Alerts.showCustomAlertDialog(
-                              //     context,
-                              //     defaultActionText: 'OK',
-                              //     onPressedOk: () {
-                              //       cubit.currentQuestionIndex = 0;
-                              //       cubit.totalScore = 0;
-                              //       cubit.questionAnsweredMap = {};
-                              //       Navigator.pop(context);
-                              //     },
-                              //     content: Column(
-                              //       mainAxisSize: MainAxisSize.min,
-                              //       children: [
-                              //         Text(
-                              //           'Total Score: ${context.read<ProjectPlusCubit>().totalScore}',
-                              //           style: const TextStyle(
-                              //             fontSize: 16.0,
-                              //             fontWeight: FontWeight.bold,
-                              //           ),
-                              //         ),
-                              //         Text(
-                              //           'Correct Answers: ${context.read<ProjectPlusCubit>().totalScore}',
-                              //           style: const TextStyle(
-                              //             fontSize: 16.0,
-                              //             fontWeight: FontWeight.bold,
-                              //           ),
-                              //         ),
-                              //         Text(
-                              //           'Wrong Answers: ${140 - context.read<ProjectPlusCubit>().totalScore}',
-                              //           style: const TextStyle(
-                              //             fontSize: 16.0,
-                              //             fontWeight: FontWeight.bold,
-                              //           ),
-                              //         ),
-                              //         Text(
-                              //           'Percentage of Correct Answers: ${context.read<ProjectPlusCubit>().totalScore / 140 * 100}%',
-                              //           style: const TextStyle(
-                              //             fontSize: 16.0,
-                              //             fontWeight: FontWeight.bold,
-                              //           ),
-                              //         ),
-                              //         Text(
-                              //           'Percentage of Wrong Answers: ${(140 - context.read<ProjectPlusCubit>().totalScore) / 140 * 100}%',
-                              //           style: const TextStyle(
-                              //             fontSize: 16.0,
-                              //             fontWeight: FontWeight.bold,
-                              //           ),
-                              //         ),
-                              //         context.read<ProjectPlusCubit>().totalScore / 140 * 100 >= 70
-                              //             ? const Text(
-                              //                 'Congratulations, you have passed the exam',
-                              //                 style: TextStyle(
-                              //                   fontSize: 16.0,
-                              //                   fontWeight: FontWeight.bold,
-                              //                   color: Colors.green,
-                              //                 ),
-                              //               )
-                              //             : const Text(
-                              //                 'Sorry, you have failed the exam',
-                              //                 style: TextStyle(
-                              //                   fontSize: 16.0,
-                              //                   fontWeight: FontWeight.bold,
-                              //                   color: Colors.red,
-                              //                 ),
-                              //               ),
-                              //       ],
-                              //     ), title: 'Result',
-                              //   );
-                              // }
-
-
+                              log('currentQuestionIndex: ${cubit.currentQuestionIndex}', name: 'QuestionWidget');
 
                               if (values.containsAll(widget.question.answers.correctAnswer)) {
                                 context.showCustomToast(
@@ -266,6 +193,75 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                                   showResult = false;
                                   cubit.questionAnsweredMap[widget.question.id] = false;
                                 });
+                              }
+                              if (cubit.currentQuestionIndex == projectPlusQuestion.length - 1) {
+                                Alerts.showCustomAlertDialog(
+                                  context,
+                                  defaultActionText: 'OK',
+                                  onPressedOk: () {
+                                    cubit.currentQuestionIndex = 0;
+                                    cubit.totalScore = 0;
+                                    cubit.questionAnsweredMap = {};
+                                    Navigator.pop(context);
+                                  },
+                                  content: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text(
+                                        'Total Score: ${context.read<ProjectPlusCubit>().totalScore}',
+                                        style: const TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Correct Answers: ${context.read<ProjectPlusCubit>().totalScore}',
+                                        style: const TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Wrong Answers: ${projectPlusQuestion.length - context.read<ProjectPlusCubit>().totalScore}',
+                                        style: const TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Percentage of Correct Answers: ${(context.read<ProjectPlusCubit>().totalScore / projectPlusQuestion.length * 100).toStringAsFixed(0)}%',
+                                        style: const TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Percentage of Wrong Answers: ${((projectPlusQuestion.length - context.read<ProjectPlusCubit>().totalScore) / projectPlusQuestion.length * 100).toStringAsFixed(0)}%',
+                                        style: const TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      context.read<ProjectPlusCubit>().totalScore / projectPlusQuestion.length * 100 >= 75
+                                          ? const Text(
+                                        'Congratulations, you have passed the exam',
+                                        style: TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.green,
+                                        ),
+                                      )
+                                          : const Text(
+                                        'Sorry, you have failed the exam',
+                                        style: TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.red,
+                                        ),
+                                      ),
+                                    ],
+                                  ), title: 'Result',
+                                );
                               }
                             },
                       style: ElevatedButton.styleFrom(

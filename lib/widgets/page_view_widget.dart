@@ -19,8 +19,13 @@ class PageViewWidget<T> extends StatelessWidget {
       controller: pageController,
       itemCount: questions.length,
       itemBuilder: (context, index) {
+        // final randomQuestions = questions..shuffle();
+        // final question = math.Random().nextBool() ? randomQuestions[index] : randomQuestions[index];
         final question = questions[index];
-        return QuestionWidget(question: question);
+        return QuestionWidget(
+          question: question,
+          questionLength: questions.length,
+        );
       },
       onPageChanged: (index) {
         log('$index', name: 'onPageChanged');

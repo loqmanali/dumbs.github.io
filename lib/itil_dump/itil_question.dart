@@ -757,82 +757,1019 @@ List<QuestionModel> itilQuestion = [
       correctAnswer: {'B. The service value chain.'},
     ),
   ),
+  QuestionModel(
+    id: 48,
+    question: "Which practice recommends the use of event-based surveys to gather feedback from customers?",
+    answers: AnswersModel(
+      id: 48,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Service level management.',
+        'B. Change enablement.',
+        'C. Service request management.',
+        'D. Problem management.',
+      ],
+      correctAnswer: {'A. Service level management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 49,
+    question: "Which statement about change authorities is CORRECT?",
+    answers: AnswersModel(
+      id: 49,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Change authorities are only required for authorizing emergency changes.',
+        'B. Change authorities are assigned when each change is deployed.',
+        'C. Change authorities are only required for authorizing normal changes.',
+        'D. Change authorities are assigned for each type of change and change model.',
+      ],
+      correctAnswer: {'D. Change authorities are assigned for each type of change and change model.'},
+    ),
+  ),
+  QuestionModel(
+    id: 50,
+    question: "Which practice improves customer and user satisfaction by reducing the negative impact of service interruptions?",
+    answers: AnswersModel(
+      id: 50,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Service request management.',
+        'B. Service level management.',
+        'C. Incident management.',
+        'D. Change enablement.',
+      ],
+      correctAnswer: {'C. Incident management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 51,
+    question: "Which will NOT be handled as a service request?",
+    answers: AnswersModel(
+      id: 51,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. The degradation of a service.',
+        'B. The replacement of a toner cartridge.',
+        'C. The provision of a laptop.',
+        'D. A complaint about a support team.',
+      ],
+      correctAnswer: {'A. The degradation of a service.'},
+    ),
+  ),
+  QuestionModel(
+    id: 52,
+    question: "A service offering may include goods, access to resources, and service actions. Which is an example of a service action?",
+    answers: AnswersModel(
+      id: 52,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. A mobile phone enables a user to work remotely.',
+        'B. A password allows a user connect to a WiFi network.',
+        'C. A license allows a user to install a software product.',
+        'D. A service desk agent provides support to a user.',
+      ],
+      correctAnswer: {'D. A service desk agent provides support to a user.'},
+    ),
+  ),
+  QuestionModel(
+    id: 53,
+    question: "Which describes a CORRECT approach to change authorization?",
+    answers: AnswersModel(
+      id: 53,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. Changes included in the change schedule are pre-authorized and do not need additional authorization.',
+        'B. Normal changes should be assessed and authorized before they are deployed.',
+        'C. Emergency changes should be authorized by as many people as possible to reduce risk.',
+        'D. Normal changes are typically implemented as service requests and authorized by the service desk.',
+      ],
+      correctAnswer: {'B. Normal changes should be assessed and authorized before they are deployed.'},
+    ),
+  ),
+  QuestionModel(
+    id: 54,
+    question: "Which statement about a service value stream is CORRECT?",
+    answers: AnswersModel(
+      id: 54,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. It uses prescriptive inputs and outputs.',
+        'B. It is a value chain activity.',
+        'C. It integrates practices for a specific scenario.',
+        'D. It is used to provide governance.',
+      ],
+      correctAnswer: {'C. It integrates practices for a specific scenario.'},
+    ),
+  ),
+  QuestionModel(
+    id: 55,
+    question: "Which statement about outputs is CORRECT?",
+    answers: AnswersModel(
+      id: 55,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. They consist of several outcomes.',
+        'B. They capture customer demand for services.',
+        'C. They contribute to the achievement of outcomes.',
+        'D. They describe how the service performs.',
+      ],
+      correctAnswer: {'C. They contribute to the achievement of outcomes.'},
+    ),
+  ),
+  QuestionModel(
+    id: 56,
+    question: "Which is an example of a business related measurement?",
+    answers: AnswersModel(
+      id: 56,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. The number of passengers checked in.',
+        'B. The average time to respond to change requests.',
+        'C. The average resolution time for incidents.',
+        'D. The number of problems resolved.',
+      ],
+      correctAnswer: {'A. The number of passengers checked in.'},
+    ),
+  ),
+  QuestionModel(
+    id: 57,
+    question: "Which BEST describes the purpose of the 'improve' value chain activity?",
+    answers: AnswersModel(
+      id: 57,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        'A. To organize a major improvement initiative into several smaller initiatives.',
+        'B. To make new and improved services and features available for use.',
+        'C. To ensure a shared understanding of the vision and improvement direction for all products and services.',
+        'D. To continually improve all products and services across all value chain activities.',
+      ],
+      correctAnswer: {'D. To continually improve all products and services across all value chain activities.'},
+    ),
+  ),
+  QuestionModel(
+    id: 58,
+    question: "Which includes governance, management practices, and continual improvement?",
+    answers: AnswersModel(
+      id: 58,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. The service value system.",
+        "B. The 'deliver and support' value chain activity.",
+        "C. The 'focus on value' guiding principle.",
+        "D. The 'value stream and processes' dimension.",
+      ],
+      correctAnswer: {'A. The service value system.'},
+    ),
+  ),
+  QuestionModel(
+    id: 59,
+    question: "What is the definition of a problem?",
+    answers: AnswersModel(
+      id: 59,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. An unplanned interruption to a service, or reduction in the quality of a service.",
+        "B. A cause, or potential cause, of one or more incidents.",
+        "C. An incident for which a full resolution is not yet available.",
+        "D. Any change of state that has significance for the management of a configuration item (CI).",
+      ],
+      correctAnswer: {'B. A cause, or potential cause, of one or more incidents.'},
+    ),
+  ),
+  QuestionModel(
+    id: 60,
+    question: "Which practice provides a communications point for users to report operational issues, queries and requests?",
+    answers: AnswersModel(
+      id: 60,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Incident management.",
+        "B. Continual improvement.",
+        "C. Service desk.",
+        "D. Relationship management.",
+      ],
+      correctAnswer: {'C. Service desk.'},
+    ),
+  ),
+  QuestionModel(
+    id: 61,
+    question: "Which dimension is MOST concerned with skills, competencies, roles and responsibilities?",
+    answers: AnswersModel(
+      id: 61,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Organizations and people.",
+        "B. Information and technology.",
+        "C. Partners and suppliers.",
+        "D. Value streams and processes.",
+      ],
+      correctAnswer: {'A. Organizations and people.'},
+    ),
+  ),
+  QuestionModel(
+    id: 62,
+    question: "An organization asks a stakeholder to review a planned change. Which guiding principle does this demonstrate?",
+    answers: AnswersModel(
+      id: 62,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Collaborate and promote visibility.",
+        "B. Start where you are.",
+        "C. Focus on value.",
+        "D. Keep it simple and practical.",
+      ],
+      correctAnswer: {'A. Collaborate and promote visibility.'},
+    ),
+  ),
+  QuestionModel(
+    id: 63,
+    question: "Which practice has a strong influence on the user experience and perception of the service provider?",
+    answers: AnswersModel(
+      id: 63,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service desk.",
+        "B. Change enablement.",
+        "C. Service level management.",
+        "D. Supplier management.",
+      ],
+      correctAnswer: {'A. Service desk.'},
+    ),
+  ),
+  QuestionModel(
+    id: 64,
+    question: "Which statement about service requests is CORRECT?",
+    answers: AnswersModel(
+      id: 64,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Complex service requests should be dealt with as normal changes.",
+        "B. Service requests that require simple workflows should be dealt with as incidents.",
+        "C. Service requests require workflows that should use manual procedures and avoid automation.",
+        "D. Service requests are usually formalized using standard procedures for initiation, approval and fulfilment.",
+      ],
+      correctAnswer: {'D. Service requests are usually formalized using standard procedures for initiation, approval and fulfilment.'},
+    ),
+  ),
+  QuestionModel(
+    id: 65,
+    question: "Which practice is responsible for moving new or changed components to live or other environments?",
+    answers: AnswersModel(
+      id: 65,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Release management.",
+        "B. Deployment management.",
+        "C. Change enablement.",
+        "D. Supplier management.",
+      ],
+      correctAnswer: {'B. Deployment management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 66,
+    question: "Which dimension focuses on relationships with other organizations that are involved in the design, development, deployment and delivery of services?",
+    answers: AnswersModel(
+      id: 66,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Organizations and people.",
+        "B. Information and technology.",
+        "C. Partners and suppliers.",
+        "D. Value streams and processes.",
+      ],
+      correctAnswer: {'C. Partners and suppliers.'},
+    ),
+  ),
+  QuestionModel(
+    id: 67,
+    question: "Which of these activities is carried out as part of 'problem management'?",
+    answers: AnswersModel(
+      id: 67,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Creating incident records.",
+        "B. Diagnosing and resolving incidents.",
+        "C. Escalating incidents to a support team for resolution.",
+        "D. Trend analysis of incident records.",
+      ],
+      correctAnswer: {'D. Trend analysis of incident records.'},
+    ),
+  ),
+  QuestionModel(
+    id: 68,
+    question: "What must always be done before an activity is automated?",
+    answers: AnswersModel(
+      id: 68,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Check that the activity has already been optimized.",
+        "B. Check that suitable new technology has been purchased.",
+        "C. Ensure that DevOps has been successfully implemented.",
+        "D. Ensure the solution removes the need for human intervention.",
+      ],
+      correctAnswer: {'A. Check that the activity has already been optimized.'},
+    ),
+  ),
+  QuestionModel(
+    id: 69,
+    question: "What is a change schedule PRIMARILY used for?",
+    answers: AnswersModel(
+      id: 69,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. To help plan emergency changes.",
+        "B. To help authorize standard changes.",
+        "C. To help assign a change authority.",
+        "D. To help manage normal changes.",
+      ],
+      correctAnswer: {'D. To help manage normal changes.'},
+    ),
+  ),
+  QuestionModel(
+    id: 70,
+    question: "Which role approves the cost of services?",
+    answers: AnswersModel(
+      id: 70,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. User.",
+        "B. Change authority.",
+        "C. Sponsor.",
+        "D. Customer.",
+      ],
+      correctAnswer: {'C. Sponsor.'},
+    ),
+  ),
+  QuestionModel(
+    id: 71,
+    question: "What actions does a service desk take for all issues, queries and requests that are reported to them?",
+    answers: AnswersModel(
+      id: 71,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Schedule, assess, authorize.",
+        "B. Diagnose, investigate, resolve.",
+        "C. Initiate, approve, fulfil.",
+        "D. Acknowledge, classify, own.",
+      ],
+      correctAnswer: {'C. Initiate, approve, fulfil.'},
+    ),
+  ),
+  QuestionModel(
+    id: 72,
+    question: "Which describes the utility of a service?",
+    answers: AnswersModel(
+      id: 72,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. A service that is fit for use.",
+        "B. A service that meets its service level targets.",
+        "C. A service that increases constraints on the consumer.",
+        "D. A service that supports the performance of the consumer.",
+      ],
+      correctAnswer: {'D. A service that supports the performance of the consumer.'},
+    ),
+  ),
+  QuestionModel(
+    id: 73,
+    question: "Which is included in the purpose of the 'service level management' practice?",
+    answers: AnswersModel(
+      id: 73,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. To maximize the number of successful service and product changes.",
+        "B. To ensure accurate information about the configuration of services is available.",
+        "C. To set clear business-based targets for service levels.",
+        "D. To ensure that suppliers and their performance are managed appropriately.",
+      ],
+      correctAnswer: {'C. To set clear business-based targets for service levels.'},
+    ),
+  ),
+  QuestionModel(
+    id: 74,
+    question: "Which usually requires a team of representatives from many stakeholder groups?",
+    answers: AnswersModel(
+      id: 74,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Fulfilling a service request.",
+        "B. Authorizing an emergency change.",
+        "C. Logging a new problem.",
+        "D. Investigating a major incident.",
+      ],
+      correctAnswer: {'D. Investigating a major incident.'},
+    ),
+  ),
+  QuestionModel(
+    id: 75,
+    question: "Which value chain activity ensures that service components meet agreed specifications?",
+    answers: AnswersModel(
+      id: 75,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Plan.",
+        "B. Design and transition.",
+        "C. Obtain/build.",
+        "D. Deliver and support.",
+      ],
+      correctAnswer: {'C. Obtain/build.'},
+    ),
+  ),
+  QuestionModel(
+    id: 76,
+    question: "What includes governance as a component?",
+    answers: AnswersModel(
+      id: 76,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Practices.",
+        "B. The service value chain.",
+        "C. The service value system.",
+        "D. The guiding principles.",
+      ],
+      correctAnswer: {'C. The service value system.'},
+    ),
+  ),
+  QuestionModel(
+    id: 77,
+    question: "Which practice needs people who understand complex systems and have creative and analytical skills?",
+    answers: AnswersModel(
+      id: 77,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Change enablement.",
+        "B. Service level management.",
+        "C. Service request management.",
+        "D. Problem management.",
+      ],
+      correctAnswer: {'D. Problem management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 78,
+    question: "What is the definition of a known error?",
+    answers: AnswersModel(
+      id: 78,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. An unplanned interruption to a service, or reduction in the quality of a service.",
+        "B. A cause, or potential cause, of one or more incident.",
+        "C. A problem that has been analyzed and has not been resolved.",
+        "D. Any change of state that has significance for the management of a service or other configuration item (CI).",
+      ],
+      correctAnswer: {'C. A problem that has been analyzed and has not been resolved.'},
+    ),
+  ),
+  QuestionModel(
+    id: 79,
+    question: "Which guiding principle is PRIMARILY concerned with end-to-end service delivery?",
+    answers: AnswersModel(
+      id: 79,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Focus on value.",
+        "B. Think and work holistically.",
+        "C. Optimize and automate.",
+        "D. Collaborate and promote visibility.",
+      ],
+      correctAnswer: {'B. Think and work holistically.'},
+    ),
+  ),
+  QuestionModel(
+    id: 80,
+    question: "What are typically recognized through notifications created by an IT service, Cl or monitoring tool?",
+    answers: AnswersModel(
+      id: 80,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Incidents.",
+        "B. Problems.",
+        "C. Events.",
+        "D. Requests.",
+      ],
+      correctAnswer: {'C. Events.'},
+    ),
+  ),
+  QuestionModel(
+    id: 81,
+    question: "Which dimension considers data security and privacy?",
+    answers: AnswersModel(
+      id: 81,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Organizations and people.",
+        "B. Information and technology.",
+        "C. Partners and suppliers.",
+        "D. Value streams and processes.",
+      ],
+      correctAnswer: {'B. Information and technology.'},
+    ),
+  ),
+  QuestionModel(
+    id: 82,
+    question: "Which term relates to service levels aligned with the needs of service consumers?",
+    answers: AnswersModel(
+      id: 82,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service management.",
+        "B. Warranty.",
+        "C. Cost.",
+        "D. Utility.",
+      ],
+      correctAnswer: {'B. Warranty.'},
+    ),
+  ),
+  QuestionModel(
+    id: 83,
+    question: "Which directly assists with the diagnosis and resolution of simple incidents?",
+    answers: AnswersModel(
+      id: 83,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Scripts for collecting user information.",
+        "B. Use of shift working patterns.",
+        "C. Fulfilment of service requests.",
+        "D. Creation of a temporary team.",
+      ],
+      correctAnswer: {'A. Scripts for collecting user information.'},
+    ),
+  ),
+  QuestionModel(
+    id: 84,
+    question: "What are guiding principles?",
+    answers: AnswersModel(
+      id: 84,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. A set of interconnected activities that help an organization deliver a valuable service.",
+        "B. A description of one or more services that help address the needs of a target consumer group.",
+        "C. A set of specialized organizational capabilities for enabling value for customers.",
+        "D. Recommendations that help an organization when adopting a service management approach.",
+      ],
+      correctAnswer: {'D. Recommendations that help an organization when adopting a service management approach.'},
+    ),
+  ),
+  QuestionModel(
+    id: 85,
+    question: "Which approach is CORRECT when applying the guiding principle 'keep it simple and practical?",
+    answers: AnswersModel(
+      id: 85,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Only add controls and metrics when they are needed.",
+        "B. Design controls and metrics first, then remove those not adding value.",
+        "C. Design controls and metrics and add them individually until all are implemented.",
+        "D. Only add controls and metrics that are required for compliance.",
+      ],
+      correctAnswer: {'B. Design controls and metrics first, then remove those not adding value.'},
+    ),
+  ),
+  QuestionModel(
+    id: 86,
+    question: "What is the purpose of the 'problem management' practice?",
+    answers: AnswersModel(
+      id: 86,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. To protect the information needed by the organization to conduct its business.",
+        "B. To reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and known errors.",
+        "C. To align the organization's practices and services with changing business needs through the ongoing identification and improvement of services.",
+        "D. To minimize the negative impact of incidents by restoring normal service operation as quickly as possible.",
+      ],
+      correctAnswer: {'B. To reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and known errors.'},
+    ),
+  ),
+  QuestionModel(
+    id: 87,
+    question: "Which practice forms a link between the service provider and the users of services?",
+    answers: AnswersModel(
+      id: 87,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Change enablement.",
+        "B. Service level management.",
+        "C. Problem management.",
+        "D. Service desk.",
+      ],
+      correctAnswer: {'D. Service desk.'},
+    ),
+  ),
+  QuestionModel(
+    id: 88,
+    question: "Which is a purpose of release management?",
+    answers: AnswersModel(
+      id: 88,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. To protect the organization's information.",
+        "B. To handle user-initiated service requests.",
+        "C. To make new and changed services available for use.",
+        "D. To move hardware and software to live environments.",
+      ],
+      correctAnswer: {'C. To make new and changed services available for use.'},
+    ),
+  ),
+  QuestionModel(
+    id: 89,
+    question: "What is recommended by the guiding principle 'progress iteratively with feedback'?",
+    answers: AnswersModel(
+      id: 89,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. A current state assessment that is carried out at the start of an improvement initiative.",
+        "B. The identification of all interested parts at the start of an improvement initiative.",
+        "C. An improvement initiative that is broken into a number of manageable sections.",
+        "D. An assessment of how all the parts of an organization will affect an improvement initiative.",
+      ],
+      correctAnswer: {'C. An improvement initiative that is broken into a number of manageable sections.'},
+    ),
+  ),
+  QuestionModel(
+    id: 90,
+    question: "Which guiding principle considers customer and user experience?",
+    answers: AnswersModel(
+      id: 90,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Collaborate and promote visibility.",
+        "B. Focus on value.",
+        "C. Start where you are.",
+        "D. Keep it simple and practical.",
+      ],
+      correctAnswer: {'B. Focus on value.'},
+    ),
+  ),
+  QuestionModel(
+    id: 91,
+    question: "Which statement about the 'change enablement' practice is CORRECT?",
+    answers: AnswersModel(
+      id: 91,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service requests are usually normal changes that can be implemented quickly without authorization.",
+        "B. Emergency changes are changes that must be fully tested and fully documented prior to implementation.",
+        "C. Standard changes are changes that need to be scheduled, assessed and authorized following a standard process.",
+        "D. Emergency changes are changes that must be implemented as soon as possible and therefore authorization is expedited.",
+      ],
+      correctAnswer: {'D. Emergency changes are changes that must be implemented as soon as possible and therefore authorization is expedited.'},
+    ),
+  ),
+  QuestionModel(
+    id: 92,
+    question: "Which is a key activity carried out in the 'did we get there?' step of the 'continual improvement' model?",
+    answers: AnswersModel(
+      id: 92,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Define measurable targets.",
+        "B. Perform baseline assessments.",
+        "C. Execute improvement actions.",
+        "D. Evaluate measurements and metrics.",
+      ],
+      correctAnswer: {'D. Evaluate measurements and metrics.'},
+    ),
+  ),
+  QuestionModel(
+    id: 93,
+    question: "What can a service remove from the consumer and impose on the consumer?",
+    answers: AnswersModel(
+      id: 93,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Utility.",
+        "B. Asset.",
+        "C. Cost.",
+        "D. Outcome.",
+      ],
+      correctAnswer: {'C. Cost.'},
+    ),
+  ),
+  QuestionModel(
+    id: 94,
+    question: "What does 'change enablement' PRIMARILY focus on?",
+    answers: AnswersModel(
+      id: 94,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Changes to service levels.",
+        "B. Changes to products and services.",
+        "C. Changes to organizational structure.",
+        "D. Changes to skills and competencies.",
+      ],
+      correctAnswer: {'B. Changes to products and services.'},
+    ),
+  ),
+  QuestionModel(
+    id: 95,
+    question: "Which is handled as a service request?",
+    answers: AnswersModel(
+      id: 95,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. An investigation to identify the cause of an incident.",
+        "B. A compliment about an IT support team.",
+        "C. The failure of an IT service.",
+        "D. An emergency change to implement a security patch.",
+      ],
+      correctAnswer: {'B. A compliment about an IT support team.'},
+    ),
+  ),
+  QuestionModel(
+    id: 96,
+    question: "Which is a key requirement for a successful service level agreement (SLA)?",
+    answers: AnswersModel(
+      id: 96,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Using individual metrics that relate to the service catalogue.",
+        "B. Using bundled metrics to relate performance to outcomes.",
+        "C. Using single-system-based metrics that relate to outputs.",
+        "D. Using an agreement between the service provider and service supplier.",
+      ],
+      correctAnswer: {'B. Using bundled metrics to relate performance to outcomes.'},
+    ),
+  ),
+  QuestionModel(
+    id: 97,
+    question: "Which is considered by the 'partners and suppliers' dimension?",
+    answers: AnswersModel(
+      id: 97,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Using artificial intelligence.",
+        "B. Defining controls and procedures.",
+        "C. Using formal roles and responsibilities.",
+        "D. Working with an integrator to manage relationships.",
+      ],
+      correctAnswer: {'D. Working with an integrator to manage relationships.'},
+    ),
+  ),
+  QuestionModel(
+    id: 98,
+    question: "Which practice recommends using tools for collaboration and the automated matching of symptoms?",
+    answers: AnswersModel(
+      id: 98,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Problem management.",
+        "B. Service level management.",
+        "C. Incident management.",
+        "D. Service request management.",
+      ],
+      correctAnswer: {'C. Incident management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 99,
+    question: "Which practice would help a user gain access to an application that they need to use?",
+    answers: AnswersModel(
+      id: 99,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service configuration management.",
+        "B. Change enablement.",
+        "C. Service request management.",
+        "D. Service level management.",
+      ],
+      correctAnswer: {'C. Service request management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 100,
+    question: "What is used to link activities within the service value chain?",
+    answers: AnswersModel(
+      id: 100,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service level agreements.",
+        "B. Inputs, outputs and triggers.",
+        "C. Opportunity, demand and value.",
+        "D. Service desk.",
+      ],
+      correctAnswer: {'B. Inputs, outputs and triggers.'},
+    ),
+  ),
+  QuestionModel(
+    id: 101,
+    question: "Which two practices use workarounds?",
+    answers: AnswersModel(
+      id: 101,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Change enablement and continual improvement.",
+        "B. Change enablement and problem management.",
+        "C. Problem management and incident management.",
+        "D. Incident management and continual improvement.",
+      ],
+      correctAnswer: {'C. Problem management and incident management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 102,
+    question: "Which is included in the purpose of the 'deliver and support' value chain activity?",
+    answers: AnswersModel(
+      id: 102,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Meeting stakeholder expectations for time to market.",
+        "B. Understanding the organization's service vision.",
+        "C. Understanding stakeholder needs.",
+        "D. Providing services to agreed specifications.",
+      ],
+      correctAnswer: {'D. Providing services to agreed specifications.'},
+    ),
+  ),
+  QuestionModel(
+    id: 103,
+    question: "Which are elements of the service value system?",
+    answers: AnswersModel(
+      id: 103,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service provision, service consumption, service relationship management.",
+        "B. Governance, service value chain, practices.",
+        "C. Outcomes, utility, warranty.",
+        "D. Customer value, stakeholder value, organization.",
+      ],
+      correctAnswer: {'B. Governance, service value chain, practices.'},
+    ),
+  ),
+  QuestionModel(
+    id: 104,
+    question: "What is an incident?",
+    answers: AnswersModel(
+      id: 104,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. The planned removal of an item that might affect a service.",
+        "B. A result enabled by one or more outputs.",
+        "C. A possible future event that could cause harm.",
+        "D. A service interruption resolved by the use of self-help tools.",
+      ],
+      correctAnswer: {'D. A service interruption resolved by the use of self-help tools.'},
+    ),
+  ),
+  QuestionModel(
+    id: 105,
+    question: "What is defined as a change of state that has significance for the management of an IT service?",
+    answers: AnswersModel(
+      id: 105,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Event.",
+        "B. Incident.",
+        "C. Problem.",
+        "D. Known error.",
+      ],
+      correctAnswer: {'A. Event.'},
+    ),
+  ),
+  QuestionModel(
+    id: 106,
+    question: "Which dimension includes the knowledge needed for the management of services?",
+    answers: AnswersModel(
+      id: 106,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Organizations and people.",
+        "B. Information and technology.",
+        "C. Partners and suppliers.",
+        "D. Value streams and processes.",
+      ],
+      correctAnswer: {'B. Information and technology.'},
+    ),
+  ),
+  QuestionModel(
+    id: 107,
+    question: "What is the PRIMARY use of a change schedule?",
+    answers: AnswersModel(
+      id: 107,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. To support the 'incident management' practice and improvement planning.",
+        "B. To manage emergency changes.",
+        "C. To plan changes and help avoid conflicts.",
+        "D. To manage standard changes.",
+      ],
+      correctAnswer: {'C. To plan changes and help avoid conflicts.'},
+    ),
+  ),
+  QuestionModel(
+    id: 108,
+    question: "Which guiding principle focuses on reducing costs and human errors?",
+    answers: AnswersModel(
+      id: 108,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Focus on value.",
+        "B. Collaborate and promote visibility.",
+        "C. Optimize and automate.",
+        "D. Think and work holistically.",
+      ],
+      correctAnswer: {'C. Optimize and automate.'},
+    ),
+  ),
+  QuestionModel(
+    id: 109,
+    question: "Which guiding principle helps to ensure that each improvement effort has more focus and is easier to maintain?",
+    answers: AnswersModel(
+      id: 109,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Start where vou are.",
+        "B. Collaborate and promote visibility.",
+        "C. Progress iteratively with feedback.",
+        "D. Think and work holistically.",
+      ],
+      correctAnswer: {'C. Progress iteratively with feedback.'},
+    ),
+  ),
+  QuestionModel(
+    id: 110,
+    question: "Which is a key activity carried out in the 'did we get there?' step of the 'continual improvement' model?",
+    answers: AnswersModel(
+      id: 110,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Define measurable targets.",
+        "B. Perform baseline assessments.",
+        "C. Execute improvement actions.",
+        "D. Evaluate measurements and metrics.",
+      ],
+      correctAnswer: {'D. Evaluate measurements and metrics.'},
+    ),
+  ),
 ];
 
 
 /**
 
 
-    Question #48
-    Which practice recommends the use of event-based surveys to gather feedback from customers?
-    A. Service level management
-    B. Change enablement
-    C. Service request management
-    D. Problem management
-    Correct Answer: A
-
-    Question #49
-    Which statement about change authorities is CORRECT?
-    A. Change authorities are only required for authorizing emergency changes
-    B. Change authorities are assigned when each change is deployed
-    C. Change authorities are only required for authorizing normal changes
-    D. Change authorities are assigned for each type of change and change model
-    Correct Answer: D
-
-    Question #50
-    Which practice improves customer and user satisfaction by reducing the negative impact of service interruptions?
-    A. Service request management
-    B. Service level management
-    C. Incident management
-    D. Change enablement
-    Correct Answer: C
-
-    Question #51
-    Which will NOT be handled as a service request?
-    A. The degradation of a service
-    B. The replacement of a toner cartridge
-    C. The provision of a laptop
-    D. A complaint about a support team
-    Correct Answer: A
-
-    Question #52
-    A service offering may include goods, access to resources, and service actions. Which is an example of a service action?
-    A. A mobile phone enables a user to work remotely
-    B. A password allows a user connect to a WiFi network
-    C. A license allows a user to install a software product
-    D. A service desk agent provides support to a user
-    Correct Answer: D
-
-    Question #53
-    Which describes a CORRECT approach to change authorization?
-    A. Changes included in the change schedule are pre-authorized and do not need additional authorization
-    B. Normal changes should be assessed and authorized before they are deployed
-    C. Emergency changes should be authorized by as many people as possible to reduce risk
-    D. Normal changes are typically implemented as service requests and authorized by the service desk
-    Correct Answer: B
-
-    Question #54
-    Which statement about a service value stream is CORRECT?
-    A. It uses prescriptive inputs and outputs
-    B. It is a value chain activity
-    C. It integrates practices for a specific scenario
-    D. It is used to provide governance
-    Correct Answer: C
-
-    Question #55
-    Which statement about outputs is CORRECT?
-    A. They consist of several outcomes
-    B. They capture customer demand for services
-    C. They contribute to the achievement of outcomes
-    D. They describe how the service performs
-    Correct Answer: C
-
-    Question #56
-    Which is an example of a business related measurement?
-    A. The number of passengers checked in
-    B. The average time to respond to change requests
-    C. The average resolution time for incidents
-    D. The number of problems resolved
-    Correct Answer: A
 
  */

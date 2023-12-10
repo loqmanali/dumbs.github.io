@@ -5,7 +5,6 @@ import 'package:dumbs/core/extensions/media_query_extension.dart';
 import 'package:dumbs/core/widgets/alerts.dart';
 import 'package:dumbs/core/widgets/coustom_sized_box.dart';
 import 'package:dumbs/project_plus_dump/cubit/project_plus_cubit.dart';
-import 'package:dumbs/project_plus_dump/project_plus_question.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,10 +16,12 @@ import '../core/widgets/custom_text.dart';
 
 class QuestionWidget<T> extends StatefulWidget {
   final T question;
+  final int questionLength;
 
   const QuestionWidget({
     super.key,
     required this.question,
+    required this.questionLength,
   });
 
   @override
@@ -194,7 +195,7 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                                   cubit.questionAnsweredMap[widget.question.id] = false;
                                 });
                               }
-                              if (cubit.currentQuestionIndex == projectPlusQuestion.length - 1) {
+                              if (cubit.currentQuestionIndex == widget.questionLength - 1) {
                                 Alerts.showCustomAlertDialog(
                                   context,
                                   defaultActionText: 'OK',
@@ -222,27 +223,27 @@ class _QuestionWidgetState extends State<QuestionWidget> {
                                         ),
                                       ),
                                       Text(
-                                        'Wrong Answers: ${projectPlusQuestion.length - context.read<ProjectPlusCubit>().totalScore}',
+                                        'Wrong Answers: ${widget.questionLength - context.read<ProjectPlusCubit>().totalScore}',
                                         style: const TextStyle(
                                           fontSize: 16.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                       Text(
-                                        'Percentage of Correct Answers: ${(context.read<ProjectPlusCubit>().totalScore / projectPlusQuestion.length * 100).toStringAsFixed(0)}%',
+                                        'Percentage of Correct Answers: ${(context.read<ProjectPlusCubit>().totalScore / widget.questionLength * 100).toStringAsFixed(0)}%',
                                         style: const TextStyle(
                                           fontSize: 16.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                       Text(
-                                        'Percentage of Wrong Answers: ${((projectPlusQuestion.length - context.read<ProjectPlusCubit>().totalScore) / projectPlusQuestion.length * 100).toStringAsFixed(0)}%',
+                                        'Percentage of Wrong Answers: ${((widget.questionLength - context.read<ProjectPlusCubit>().totalScore) / widget.questionLength * 100).toStringAsFixed(0)}%',
                                         style: const TextStyle(
                                           fontSize: 16.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
-                                      context.read<ProjectPlusCubit>().totalScore / projectPlusQuestion.length * 100 >= 75
+                                      context.read<ProjectPlusCubit>().totalScore / widget.questionLength * 100 >= 75
                                           ? const Text(
                                         'Congratulations, you have passed the exam',
                                         style: TextStyle(

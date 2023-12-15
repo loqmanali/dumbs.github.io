@@ -342,7 +342,7 @@ List<QuestionModel> itilQuestion = [
   ),
   QuestionModel(
     id: 22,
-    question: 'In service relationships, what is a benefit fo identifying consumer roles?',
+    question: 'In service relationships, what is a benefit of identifying consumer roles?',
     answers: AnswersModel(
       id: 22,
       points: 1,
@@ -374,7 +374,7 @@ List<QuestionModel> itilQuestion = [
   ),
   QuestionModel(
     id: 24,
-    question: 'What term is used to describe whether a service wil meet availability, capacity and security requirements?',
+    question: 'What term is used to describe whether a service will meet availability, capacity and security requirements?',
     answers: AnswersModel(
       id: 24,
       points: 1,
@@ -446,15 +446,15 @@ List<QuestionModel> itilQuestion = [
       answers: [
         'A. Restricting information about the improvement to essential stakeholders only.',
         'B. Increasing collaboration and visibility for the improvement.',
-        'C. Involving customers after al planning has been completed.',
-        'D. Engaging every stakeholder group ni the same way, with the same communication.',
+        'C. Involving customers after all planning has been completed.',
+        'D. Engaging every stakeholder group in the same way, with the same communication.',
       ],
-      correctAnswer: {'C. Involving customers after al planning has been completed.'},
+      correctAnswer: {'C. Involving customers after all planning has been completed.'},
     ),
   ),
   QuestionModel(
     id: 29,
-    question: 'What varies ni size and complexity, and uses functions ot achieve its objectives?',
+    question: 'What varies in size and complexity, and uses functions to achieve its objectives?',
     answers: AnswersModel(
       id: 29,
       points: 1,
@@ -502,7 +502,7 @@ List<QuestionModel> itilQuestion = [
   ),
   QuestionModel(
     id: 32,
-    question: 'Which wil help solve incidents more quickly?',
+    question: 'Which will help solve incidents more quickly?',
     answers: AnswersModel(
       id: 32,
       points: 1,
@@ -672,7 +672,7 @@ List<QuestionModel> itilQuestion = [
         'A. Make new and changed services available for use.',
         'B. Ensure that risks have been properly assessed.',
         'C. Record and report selected changes of state.',
-        'D. Plan and manage the full lifecycle of alIT assets.',
+        'D. Plan and manage the full lifecycle of all IT assets.',
       ],
       correctAnswer: {'B. Ensure that risks have been properly assessed.'},
     ),
@@ -718,7 +718,7 @@ List<QuestionModel> itilQuestion = [
       isMultipleChoice: false,
       answers: [
         'A. There view and authorization of a change requested by a customer.',
-        'B. The implementation of a critical software patch ni response to a vendor security issue.',
+        'B. The implementation of a critical software patch in response to a vendor security issue.',
         'C. The installation of a software application in response to a service request.',
         'D. The replacement of a component in response to a major incident.',
       ],
@@ -1765,11 +1765,387 @@ List<QuestionModel> itilQuestion = [
       correctAnswer: {'D. Evaluate measurements and metrics.'},
     ),
   ),
+  QuestionModel(
+    id: 111,
+    question: "What is important for a 'continual improvement register' (CIR)?",
+    answers: AnswersModel(
+      id: 111,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Improvement ideas are documented, assessed and prioritized.",
+        "B. Improvement ideas from many sources are kept in a single CIR.",
+        "C. Improvement ideas that are not being actioned immediately are removed from the CIR.",
+        "D. Improvement ideas are tested, funded and agreed.",
+      ],
+      correctAnswer: {'A. Improvement ideas are documented, assessed and prioritized.'},
+    ),
+  ),
+  QuestionModel(
+    id: 112,
+    question: "Which is a purpose of the 'service level management' practice?",
+    answers: AnswersModel(
+      id: 112,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. To establish and nurture the links between the organization and its stakeholders.",
+        "B. To ensure that the organization's suppliers and their performance are managed appropriately.",
+        "C. To support the agreed quality of a service by handling all agreed, user-initiated service requests.",
+        "D. To set clear business-based targets for service levels.",
+      ],
+      correctAnswer: {'D. To set clear business-based targets for service levels.'},
+    ),
+  ),
+  QuestionModel(
+    id: 113,
+    question: "What describes the steps needed to create and deliver a specific service to a consumer?",
+    answers: AnswersModel(
+      id: 113,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service management.",
+        "B. Practices.",
+        "C. A value stream.",
+        "D. Service level management.",
+      ],
+      correctAnswer: {'C. A value stream.'},
+    ),
+  ),
+  QuestionModel(
+    id: 114,
+    question: "Which helps to manage an incident when it is unclear which support team should be working on the incident?",
+    answers: AnswersModel(
+      id: 114,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Disaster recovery plans.",
+        "B. Swarming.",
+        "C. Target resolution times.",
+        "D. Self-help.",
+      ],
+      correctAnswer: {'B. Swarming.'},
+    ),
+  ),
+  QuestionModel(
+    id: 115,
+    question: "Which statement about the 'continual improvement' practice is CORRECT?",
+    answers: AnswersModel(
+      id: 115,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Continual improvement participation should be limited to a small dedicated team.",
+        "B. It is the role of senior management to authorize improvement initiatives.",
+        "C. Training should be provided to those involved in continual improvement.",
+        "D. A single continual improvement register should be maintained by senior management.",
+      ],
+      correctAnswer: {'B. It is the role of senior management to authorize improvement initiatives.'},
+    ),
+  ),
+  QuestionModel(
+    id: 116,
+    question: "Which does the ITIL service value system discourage?",
+    answers: AnswersModel(
+      id: 116,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Coordinated authorities and responsibilities.",
+        "B. Organizational silos.",
+        "C. Interfaces among practices.",
+        "D. Organizational agility.",
+      ],
+      correctAnswer: {'B. Organizational silos.'},
+    ),
+  ),
+  QuestionModel(
+    id: 117,
+    question: "An SLA is a service level agreement. Which describes the 'watermelon SLA' effect?",
+    answers: AnswersModel(
+      id: 117,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. A single SLA defines target service levels for multiple customers, so every customer sees reports about other customers' experiences.",
+        "B. The metrics in an SLA are focused on internal measures, so that reports show everything is good, while the customer is not satisfied.",
+        "C. SLA targets change very frequently, so that each report includes new measures and trends cannot be analyzed.",
+        "D. Introducing SLAs for a service enables customers to see that the service provider is doing a really good job, so this improves satisfaction.",
+      ],
+      correctAnswer: {'B. The metrics in an SLA are focused on internal measures, so that reports show everything is good, while the customer is not satisfied.'},
+    ),
+  ),
+  QuestionModel(
+    id: 118,
+    question: "Which practice includes conducting regular reviews to ensure that services are still appropriate and relevant?",
+    answers: AnswersModel(
+      id: 118,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service level management.",
+        "B. Service desk.",
+        "C. Continual improvement.",
+        "D. Change enablement.",
+      ],
+      correctAnswer: {'A. Service level management.'},
+    ),
+  ),
+  QuestionModel(
+    id: 119,
+    question: "What is a service?",
+    answers: AnswersModel(
+      id: 119,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. A possible event that could cause harm or loss, or make it more difficult to achieve objectives.",
+        "B. A means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks.",
+        "C. A tangible or intangible deliverable of an activity.",
+        "D. Joint activities performed by a service provider and a service consumer to ensure continual value co-creation based on agreed and available service offerings.",
+      ],
+      correctAnswer: {'B. A means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks.'},
+    ),
+  ),
+  QuestionModel(
+    id: 120,
+    question: """
+    <p>Which TWO are important aspects of the 'service request management' practice?</p>
+    <p>1. Standardization and automation</p>
+    <p>2. Providing a variety of channels for access</p>
+    <p>3. Establishing a shared view of targets</p>
+    <p>4. Policies for approvals</p>
+    """,
+    answers: AnswersModel(
+      id: 120,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. 1 and 2.",
+        "B. 2 and 3.",
+        "C. 3 and 4.",
+        "D. 1 and 4.",
+      ],
+      correctAnswer: {'D. 1 and 4.'},
+    ),
+  ),
+  QuestionModel(
+    id: 121,
+    question: "What is required by all service desk staff?",
+    answers: AnswersModel(
+      id: 121,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Excellent technical knowledge.",
+        "B. Root cause analysis skills.",
+        "C. Demonstration of emotional intelligence.",
+        "D. Knowledge of telephony technology.",
+      ],
+      correctAnswer: {'C. Demonstration of emotional intelligence.'},
+    ),
+  ),
+  QuestionModel(
+    id: 122,
+    question: "Which practice establishes a channel between the service provider and its users?",
+    answers: AnswersModel(
+      id: 122,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Relationship management.",
+        "B. Change enablement.",
+        "C. Supplier management.",
+        "D. Service desk.",
+      ],
+      correctAnswer: {'D. Service desk.'},
+    ),
+  ),
+  QuestionModel(
+    id: 123,
+    question: "Which practice includes the use of approaches such as Lean, Agile and DevOps with the aim of facilitating a greater amount of change at a quicker rate?",
+    answers: AnswersModel(
+      id: 123,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service desk.",
+        "B. Monitoring and event management.",
+        "C. Service level management.",
+        "D. Continual improvement.",
+      ],
+      correctAnswer: {'D. Continual improvement.'},
+    ),
+  ),
+  QuestionModel(
+    id: 124,
+    question: "Which practice has a purpose that includes maximizing success by ensuring that risks have been properly assessed?",
+    answers: AnswersModel(
+      id: 124,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Relationship management.",
+        "B. Change enablement.",
+        "C. Release management.",
+        "D. Monitoring and event management.",
+      ],
+      correctAnswer: {'B. Change enablement.'},
+    ),
+  ),
+  QuestionModel(
+    id: 125,
+    question: "Which practice provides users with a way to get various requests arranged, explained and coordinated?",
+    answers: AnswersModel(
+      id: 125,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Service level management.",
+        "B. Relationship management.",
+        "C. Continual improvement.",
+        "D. Service desk.",
+      ],
+      correctAnswer: {'D. Service desk.'},
+    ),
+  ),
+  QuestionModel(
+    id: 126,
+    question: "Which helps to streamline the fulfilment of service requests?",
+    answers: AnswersModel(
+      id: 126,
+      points: 1,
+      isMultipleChoice: false,
+      answers: [
+        "A. Understanding which service requests can be accomplished with limited approvals.",
+        "B. Creating new workflows for every service request.",
+        "C. Separating requests relating to service failures from the degradation of services.",
+        "D. Eliminating service requests which have complex workflows.",
+      ],
+      correctAnswer: {'A. Understanding which service requests can be accomplished with limited approvals.'},
+    ),
+  ),
 ];
 
 
 /**
 
 
+    Question #127
+    Which statement about outcomes is CORRECT?
+    A. They are deliverables provided to service consumers
+    B. They allow service consumers to achieve a desired result
+    C. They provide products to service providers based on outputs
+    D. They co-create value for service providers by reducing costs and risks
+    Correct Answer: B
+
+    Question #128
+    Which guiding principle says that services and processes should NOT provide a solution for every exception?
+    A. Keep it simple and practical
+    B. Collaborate and promote visibility
+    C. Think and work holistically
+    D. Optimize and automate
+    Correct Answer: A
+
+    Question #129
+    Identify the missing word in the following sentence.
+    The purpose of the 'supplier management' practice is to ensure that the organization's suppliers and their performances are [?] appropriately to support the seamless provision of quality products and services.
+    A. measured
+    B. rewarded
+    C. managed
+    D. defined
+    Correct Answer: C
+
+    Question #130
+    Identify the missing words in the following sentence.
+    The purpose of the service configuration management practice is to ensure that accurate and reliable information about the [?], and the Cls that support them, is available when and where it is needed.
+    A. relationships with suppliers
+    B. configuration of services
+    C. skills of people
+    D. authorization of changes
+    Correct Answer: B
+
+    Question #131
+    Which practice requires skills and competencies related to business analysis, supplier management and relationship management?
+    A. Incident management
+    B. Monitoring and event management
+    C. Service level management
+    D. IT asset management
+    Correct Answer: C
+
+    Question #132
+    When should a workaround be created?
+    A. As soon as possible, once the incident is logged
+    B. After the resolution of a problem
+    C. When a problem cannot be resolved quickly
+    D. When a potential permanent solution has been identified
+    Correct Answer: C
+
+    Question #133
+    What is a configuration item?
+    A. Any financially valuable component that can contribute to the delivery of an IT product or service
+    B. Any change of state that has significance for the management of a service
+    C. Any component that needs to be managed in order to deliver an IT service
+    D. A problem that has been analyzed but has not been resolved
+    Correct Answer: C
+
+    Question #134
+    Identify the missing words in the following sentence.
+    When an organization has decided to improve a service, it should start by considering [?].
+    A. existing information
+    B. new methods
+    C. additional measurements
+    D. revised processes
+    Correct Answer: A
+
+    Question #135
+    Which is a use of the change schedule?
+    A. Assigning resources to changes
+    B. Deciding the approval authority for changes
+    C. Automating the change process
+    D. Creating change models
+    Correct Answer: A
+
+    Question #136
+    Which dimension of service management considers the workflows and controls needed to deliver services?
+    A. Organizations and people
+    B. Information and technology
+    C. Partners and suppliers
+    D. Value streams and processes
+    Correct Answer: D
+
+    Question #137
+    Which guiding principle considers how the steps of a process can be performed as efficiently as possible?
+    A. Focus on value
+    B. Start where you are
+    C. Think and work holistically
+    D. Optimize and automate
+    Correct Answer: D
+
+    Question #138
+    Which statement about the 'incident management' practice is CORRECT?
+    A. It identifies the cause of major incidents
+    B. It authorizes changes to resolve incidents
+    C. It maintains detailed procedures for diagnosing incidents
+    D. It resolves the highest impact incidents first
+    Correct Answer: D
+
+    Question #139
+    How should an organization prioritize incidents?
+    A. Ask the user for their preferred resolution timeframe
+    B. Assess the availability of the appropriate support team
+    C. Use an agreed classification which is based on the business impact of the incident
+    D. Create an order of incidents based on the dates and times when they were logged
+    Correct Answer: C
+
+    Question #140
+    Which is a purpose of the 'relationship management' practice?
+    A. To systematically observe services and service components
+    B. To protect the information needed by the organization to conduct its business
+    C. To be the entry point and single point of contact for the service provider with all of its users
+    D. To identify, analyze, monitor, and continually improve links with stakeholders
+    Correct Answer: D
 
  */

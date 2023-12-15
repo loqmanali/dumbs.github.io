@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             ),
           ],
           child: MaterialApp(
-            title: 'Dumbs App',
+            title: 'Questions App',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

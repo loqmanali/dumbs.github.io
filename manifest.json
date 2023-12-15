@@ -1,6 +1,6 @@
 {
-    "name": "dumbs",
-    "short_name": "dumbs",
+    "name": "Questions",
+    "short_name": "Questions",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
